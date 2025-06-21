@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Suspense} from 'react'
 import City from '../comp/city'
 export const dynamic = "force-dynamic";
 export async function generateMetadata({ params }) {
