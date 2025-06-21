@@ -25,8 +25,8 @@ const Footer = () => {
               <div className="mt-3 grid space-y-3">
                 <ul className="flex flex-col gap-y-2  ">
                   <ol>
-                    <Link href="" className="">
-                      hello
+                    <Link href="/cities" className="">
+                      All City's
                     </Link>
                   </ol>
                 </ul>
