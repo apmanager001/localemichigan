@@ -3,22 +3,6 @@ import React, { useState,useEffect } from "react";
 import Link from "next/link";
 import useCityStore from '../../comp/store/cityStore'
 
-export async function generateMetadata() {
-  return {
-    title: `All Michigan Cities | Locale Michigan`,
-    description: `Explore a comprehensive list of Michigan cities. Use the search to quickly find any city and access detailed local information.`,
-    openGraph: {
-      title: `All Michigan Cities | Locale Michigan`,
-      description: `Explore a comprehensive list of Michigan cities. Use the search to quickly find any city and access detailed local information.`,
-      images: [`https://localemichigan.com/`],
-      url: `https://localemichigan.com/news/cities}`,
-    },
-    twitter: {
-      card: "summary_large_image",
-    },
-  };
-}
-
 const Cities = () => {
   const { cities, fetchCities } = useCityStore();
   const [query, setQuery] = useState("");
