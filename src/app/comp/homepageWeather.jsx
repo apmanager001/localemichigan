@@ -24,6 +24,7 @@ const HomepageWeather = () => {
   const [city, setCity] = useState('')
   const [state, setState] = useState("");
 
+  
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(
       async (position) => {
