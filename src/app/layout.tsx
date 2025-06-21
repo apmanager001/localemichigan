@@ -17,11 +17,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Locale Michigan",
-    template: `%s | Locale Michigan`,
-  },
+  title: "Locale Michigan",
   keywords: ["Michigan Parks", "Michigan Lakes", "Michigan Lighthouse"],
+  description: `Discover vibrant cities, stunning lighthouses, serene parks,
+            fascinating museums, and breathtaking lakes. Your Michigan adventure
+            starts here!`,
   openGraph: {
     description: `Discover vibrant cities, stunning lighthouses, serene parks,
             fascinating museums, and breathtaking lakes. Your Michigan adventure

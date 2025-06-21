@@ -24,7 +24,7 @@ const HomepageWeather = () => {
   const [city, setCity] = useState('')
   const [state, setState] = useState("");
 
-  
+
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(
       async (position) => {
@@ -36,8 +36,6 @@ const HomepageWeather = () => {
               `https://geocode.maps.co/reverse?lat=${latitude}&lon=${longitude}&api_key=${key}`
             );
             const data = await res.json();
-            console.log(latitude, longitude)
-            console.log(data)
             if (data && data.address) {
               setCity(
                 data.address.municipality ||
