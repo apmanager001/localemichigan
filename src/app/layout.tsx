@@ -40,6 +40,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
+        <PostHogProvider>
         <Toaster
           position={"top-left"}
           toastOptions={{
@@ -63,9 +64,10 @@ export default function RootLayout({
             },
           }}
         />
-        <Header />
-        <main className="flex-grow">{children}</main>
-        <Footer />
+          <Header />
+            <main className="flex-grow">{children}</main>
+          <Footer />
+        </PostHogProvider>
       </body>
     </html>
   );
