@@ -1,7 +1,6 @@
 import React from 'react'
 import City from '../comp/city'
-// import {city} from '/cities.json'
-
+export const dynamic = "force-dynamic";
 export async function generateMetadata({ params }) {
   const cityName = params.id.toLowerCase();
   const description = `Discover key insights about ${cityName.toUpperCase()}, Michigan — including population trends from 2000 to 2020, land area, population density, geographic coordinates, and sister city connections. Whether you are a resident, researcher, or just curious, this page offers a snapshot of ${cityName.toUpperCase()}'s growth, layout, and global ties. Stay informed with local weather updates and explore what makes this Michigan city unique.`;
@@ -21,7 +20,9 @@ export async function generateMetadata({ params }) {
 }
 const Page = ({params}) => {
   return (
-    <div><City params={params}/></div>
+    <Suspense fallback={<div>Loading city data...</div>}>
+      <City params={params}/>
+    </Suspense>
   )
 }
 
