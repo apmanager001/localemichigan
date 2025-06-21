@@ -8,8 +8,8 @@ export async function generateMetadata() {
     openGraph: {
       title: `All Michigan Cities | Locale Michigan`,
       description: `Explore a comprehensive list of Michigan cities. Use the search to quickly find any city and access detailed local information.`,
-      images: [`https://localemichigan.com/`],
-      url: `https://localemichigan.com/cities}`,
+      images: [`https://localemichigan.com/logo.png`],
+      url: `https://localemichigan.com/cities`,
     },
     twitter: {
       card: "summary_large_image",
