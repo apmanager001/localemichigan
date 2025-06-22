@@ -47,19 +47,23 @@ const City = () => {
         className="min-h-[500px] mt-10"
         style={{ backgroundColor: "rgba(255, 255, 255, 0.8)" }}
       >
-        <div className="flex flex-col md:flex-row items-center md:items-start md:justify-around mb-10">
+        <div className="flex flex-col md:flex-row flex-wrap items-center md:items-start md:justify-around mb-10 gap-4">
           {cityData ? (
+             <div className="w-80 md:w-[500px] bg-blue-100/50 backdrop-blur-md border-2 border-gray-600 rounded-2xl shadow-xl p-6 space-y-4">
+              <CityInfo cityData={cityData} />
+            </div>
+          ) : (
+            <div className="border-2 border-gray-300 skeleton w-72 md:w-[500px] "></div>
+          )}
+          {cityData ? (
+            <div className="border-2 border-gray-600 w-80 md:w-[500px] rounded-xl shadow-xl p-6 flex flex-col bg-blue-100/50 backdrop-blur-md">
             <Weather cityData={cityData} />
+          </div>
           ) : (
             <div className="border-2 border-gray-300 skeleton w-72 md:w-[500px] "></div>
           )}
           {cityData ? (
-            <CityInfo cityData={cityData} />
-          ) : (
-            <div className="border-2 border-gray-300 skeleton w-72 md:w-[500px] "></div>
-          )}
-          {cityData ? (
-            <div className="w-96 border-2 border-gray-600">
+            <div className="w-80 md:w-[500px] border-2 border-gray-600">
               <CityMap lat={cityData.lat} lon={cityData.lon} />
             </div>
           ) : (

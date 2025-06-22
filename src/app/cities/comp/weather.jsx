@@ -71,7 +71,7 @@ const Weather = ({ cityData }) => {
   };
   // console.log(weather)
   return (
-        <div className="border-2 border-gray-600 w-72 md:w-[500px] rounded-xl shadow-xl p-2 flex flex-col bg-blue-100/50 backdrop-blur-md">
+        <>
           <h3 className="font-bold">Weather:</h3>
           <p className={`${paragraph}`}>
             <MountainSnow />
@@ -137,7 +137,7 @@ const Weather = ({ cityData }) => {
           ) : (
             ""
           )}
-        </div>
+        </>
   );
 };
 

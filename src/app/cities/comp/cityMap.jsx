@@ -21,6 +21,7 @@ const CityMap = ({ lat, lon }) => {
   return (
     <div
       className={`h-96 w-full  overflow-hidden  relative `}
+      id='map'
     >
       <Map
         key={`${lat}-${lon}-${zoom}`}

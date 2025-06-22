@@ -3,7 +3,7 @@ import { Building2, History } from "lucide-react";
 
 const CityInfo = ({ cityData }) => {
   return (
-    <div className="w-80 md:w-[500px] bg-blue-100/50 backdrop-blur-md border-2 border-gray-600 rounded-2xl shadow-xl p-6 space-y-4">
+    <>
       <h1 className="text-3xl font-bold text-center text-gray-800">
         {cityData?.name}, Michigan
       </h1>
@@ -124,7 +124,7 @@ const CityInfo = ({ cityData }) => {
           </li>
         )}
       </ul>
-    </div>
+    </>
   );
 };
 
