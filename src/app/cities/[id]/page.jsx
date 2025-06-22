@@ -3,22 +3,43 @@ import path from "path";
 import City from '../comp/city'
 
 export async function generateMetadata({ params }) {
-  // const cityName = params.id.toLowerCase();
-  const cityName = await params.id.toLowerCase().replace(/_/g, " ");
+  const cityName = params.id.toLowerCase().replace(/_/g, " ");
   const citiesPath = path.resolve(process.cwd(), "public/data/cities.json");
-  const fileContents = await fs.readFile(citiesPath, "utf-8");
-  const cities = JSON.parse(fileContents);
-  const cityData = cities.find((city) => city.name.toLowerCase() === cityName);
+  const file = await fs.readFile(citiesPath, "utf-8");
+  const cities = JSON.parse(file);
+  const cityData = cities.find((c) => c.name.toLowerCase() === cityName);
 
-  const description = `Discover key insights about ${cityName.toUpperCase()}, Michigan — including population trends from 2000 to 2020, land area, population density, geographic coordinates, and sister city connections. Whether you are a resident, researcher, or just curious, this page offers a snapshot of ${cityName.toUpperCase()}'s growth, layout, and global ties. Stay informed with local weather updates and explore what makes this Michigan city unique.`;
+  if (!cityData) {
+    return {
+      title: "Locale Michigan",
+      description:
+        "Explore Michigan cities—demographics, geography, and connections.",
+    };
+  }
+
+  const {
+    name,
+    place,
+    county,
+    Population2020,
+    landAreaSqMi,
+    density,
+    sister_cities,
+    website,
+  } = cityData;
+
+  const description = `Explore ${name}, Michigan — a ${place} in ${county} County with a 2020 population of ${Population2020}, covering ${landAreaSqMi} sq mi and a density of ${density}. Learn about its sister city connection with ${
+    sister_cities?.[0] || "international communities"
+  } and access local resources.`;
+
   return {
-    title: `${cityName.toUpperCase()}  | Locale Michigan`,
-    description: description,
+    title: `${name} | Locale Michigan`,
+    description,
     openGraph: {
-      title: `${cityName.toUpperCase()} `,
-      description: description,
-      images: [`https://localemichigan.com/city.webp`],
-      url: `https://localemichigan.com/cities/${cityName}`,
+      title: `${name}, Michigan`,
+      description,
+      images: ["https://localemichigan.com/city.webp"],
+      url: `https://localemichigan.com/cities/${params.id}`,
     },
     twitter: {
       card: "summary_large_image",

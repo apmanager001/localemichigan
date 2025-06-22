@@ -39,7 +39,7 @@ const News = () => {
 
     if (isLoading) {
       return (
-        <div className="px-4 sm:px-6 lg:px-12 xl:px-20">
+        <div className="p-4 sm:p-6 lg:p-12 xl:p-20">
           <h2 className="text-2xl text-center font-bold mb-2">
             Loading News...
           </h2>

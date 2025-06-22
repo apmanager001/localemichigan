@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate:sitemap": "node src/function/sitemap.js"
   },
   "dependencies": {
     "@vis.gl/react-maplibre": "^8.0.4",
