@@ -72,7 +72,7 @@ const Header = () => {
         </div>
       </div>
       <div className="navbar-center hidden md:flex justify-center flex-1">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal px-1 font-extrabold text-lg">
           {menu}
         </ul>
       </div>
