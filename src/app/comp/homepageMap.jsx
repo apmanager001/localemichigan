@@ -3,7 +3,7 @@ import React from 'react'
 import { Map } from "@vis.gl/react-maplibre";
 const HomepageMap = () => {
   return (
-    <div className="h-[400px] overflow-hidden">
+    <div className="h-[400px] overflow-hidden" id="map">
       <Map
         initialViewState={{
           longitude: -85.555,
