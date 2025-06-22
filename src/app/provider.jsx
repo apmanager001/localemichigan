@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import posthog from "posthog-js";
 import { PostHogProvider as PHProvider } from "posthog-js/react";
 import { usePathname, useSearchParams } from "next/navigation";
-import PostHogPageView from './postHogPageView'
+import SuspendedPostHogPageView from "./postHogPageView";
 
 export function PostHogProvider({ children }) {
   const pathname = usePathname()
@@ -33,7 +33,7 @@ export function PostHogProvider({ children }) {
 
   return (
     <PHProvider client={posthog}>
-      <PostHogPageView />
+      <SuspendedPostHogPageView />
       {children}
     </PHProvider>
-)}
+  );}
