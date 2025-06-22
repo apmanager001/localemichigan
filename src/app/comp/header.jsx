@@ -10,6 +10,9 @@ const Header = () => {
       <li>
         <a href="/cities">Cities</a>
       </li>
+      <li>
+        <a href="/about">About</a>
+      </li>
       {/* <li>
         <details>
           <summary>Parent</summary>

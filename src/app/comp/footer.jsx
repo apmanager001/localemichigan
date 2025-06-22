@@ -21,12 +21,23 @@ const Footer = () => {
               </a>
             </div>
 
-            <div className="col-span-1 hover:text-gray-600 hover:underline">
+            <div className="col-span-1">
               <div className="mt-3 grid space-y-3">
                 <ul className="flex flex-col gap-y-2  ">
                   <ol>
-                    <Link href="/cities" className="">
+                    <Link
+                      href="/cities"
+                      className="hover:text-gray-600 hover:underline"
+                    >
                       All City's
+                    </Link>
+                  </ol>
+                  <ol>
+                    <Link
+                      href="/about"
+                      className="hover:text-gray-600 hover:underline"
+                    >
+                      About Us
                     </Link>
                   </ol>
                 </ul>
@@ -59,9 +70,7 @@ const Footer = () => {
 
           <div className="mt-5 sm:mt-12 grid gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center">
             <div className="flex justify-between items-center">
-              <p className="text-sm text-gray-400">
-                © 2025 Locale Michigan.
-              </p>
+              <p className="text-sm text-gray-400">© 2025 Locale Michigan.</p>
             </div>
 
             <div className="underline">
