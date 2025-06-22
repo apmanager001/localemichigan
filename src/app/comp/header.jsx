@@ -86,7 +86,8 @@ const Header = () => {
       </div>
       <div className="navbar-end gap-4">
         <a className="btn btn-soft btn-success">Map</a>
-        {typeof window !== "undefined" && <HomepageWeather />}
+        {/* {typeof window !== "undefined" && <HomepageWeather />} */}
+        <HomepageWeather />
       </div>
     </div>
   );
