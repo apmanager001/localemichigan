@@ -17,6 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://localemichigan.com"),
   title: "Locale Michigan",
   keywords: ["Michigan Parks", "Michigan Lakes", "Michigan Lighthouse"],
   description: `Discover vibrant cities, stunning lighthouses, serene parks,
