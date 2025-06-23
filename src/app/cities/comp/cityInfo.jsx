@@ -1,103 +1,13 @@
-import React from "react";
-import { Building2, History } from "lucide-react";
-import { SocialIcon } from "react-social-icons";
+'use client'
+import React, {useState} from "react";
 
 const CityInfo = ({ cityData }) => {
+  const [showAllZips, setShowAllZips] = useState(false);
+
+  const visibleZips = showAllZips ? cityData.zip : cityData.zip.slice(0, 6);
+
   return (
-    <>
-      <h1 className="text-3xl font-bold text-center text-gray-800">
-        {cityData?.name}, Michigan
-      </h1>
-      <div className="flex justify-center items-center w-full gap-2">
-        <div className="tooltip tooltip-bottom" data-tip="City URL">
-          {cityData?.website ? (
-            <a href={`${cityData.website}`} target="_blank">
-              <Building2 />
-            </a>
-          ) : (
-            ""
-          )}
-        </div>
-        <div className="tooltip tooltip-bottom" data-tip="WIKI URL">
-          {cityData?.wikiUrl ? (
-            <a href={`${cityData.wikiUrl}`} target="_blank">
-              <img src="/icons/wiki2.png" className="h-6" />
-            </a>
-          ) : (
-            ""
-          )}
-        </div>
-        <div className="tooltip tooltip-bottom" data-tip="Facebook URL">
-          {cityData?.facebook ? (
-              <SocialIcon
-                network="facebook"
-                style={{ height: 26, width: 26 }}
-                url={`${cityData.facebook}`}
-                target="_blank"
-              />
-          ) : (
-            ""
-          )}
-        </div>
-        <div className="tooltip tooltip-bottom" data-tip="Instagram URL">
-          {cityData?.instagram ? (
-              <SocialIcon
-                network="instagram"
-                style={{ height: 26, width: 26 }}
-                url={`${cityData.instagram}`}
-                target="_blank"
-              />
-          ) : (
-            ""
-          )}
-        </div>
-        <div className="tooltip tooltip-bottom" data-tip="X URL">
-          {cityData?.x ? (
-              <SocialIcon
-                network="x"
-                style={{ height: 26, width: 26 }}
-                url={`${cityData.x}`}
-                target="_blank"
-              />
-          ) : (
-            ""
-          )}
-        </div>
-        <div className="tooltip tooltip-bottom" data-tip="Youtube URL">
-          {cityData?.youtube ? (
-              <SocialIcon
-                network="youtube"
-                style={{ height: 26, width: 26 }}
-                url={`${cityData.youtube}`}
-                target="_blank"
-              />
-          ) : (
-            ""
-          )}
-        </div>
-
-        <div className="tooltip tooltip-bottom" data-tip="Historical Site">
-          {cityData?.historySite ? (
-            <a href={`${cityData.historySite}`} target="_blank">
-              <History />
-            </a>
-          ) : (
-            ""
-          )}
-        </div>
-      </div>
-      <div className="flex justify-center">
-        <a
-          href={`https://www.google.com/maps?q=${cityData?.lat},${cityData?.lon}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-sm btn-soft btn-primary"
-        >
-          View on Map
-        </a>
-      </div>
-
-      <ul className="text-gray-700 space-y-1">
+      <ul className="text-gray-700 space-y-1 max-w-64">
         <li>
           <strong>Type:</strong> {cityData?.place?.toUpperCase()}
         </li>
@@ -139,7 +49,6 @@ const CityInfo = ({ cityData }) => {
             <strong>Founded:</strong> {cityData.start_date}
           </li>
         )}
-
         {cityData?.sister_cities?.length > 0 && (
           <li>
             <strong>Sister Cities:</strong>
@@ -161,20 +70,27 @@ const CityInfo = ({ cityData }) => {
             </ul>
           </li>
         )}
-        {cityData?.zip?.length > 0 && (
-          <li>
-            <strong>Zip Codes:</strong>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-1 ml-2 mt-1 text-gray-700">
-              {cityData.zip.map((z, idx) => (
-                <div key={idx} className="px-1 text-center">
-                  {z}
-                </div>
-              ))}
-            </div>
-          </li>
-        )}
+
+        <li>
+          <strong>Zip Codes:</strong>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-1 ml-2 mt-1 text-gray-700">
+            {visibleZips.map((z, idx) => (
+              <div key={idx} className="px-1 text-center">
+                {z}
+              </div>
+            ))}
+          </div>
+        
+          {cityData.zip.length > 6 && (
+            <button
+              onClick={() => setShowAllZips(!showAllZips)}
+              className="text-sm text-right w-full pr-10 text-blue-600 mt-2 ml-2 underline focus:outline-none"
+            >
+              {showAllZips ? "View less" : "View more"}
+            </button>
+          )}
+        </li>
       </ul>
-    </>
   );
 };
 

@@ -8,7 +8,7 @@ import { Home, Gamepad2, ClipboardList, Menu } from "lucide-react";
 const Footer = () => {
   return (
     <>
-      <footer className="hidden md:block mt-auto w-full z-10 bg-base-200">
+      <footer className="block mt-auto w-full z-10 bg-base-200">
         <div className="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
             <div className="col-span-full lg:col-span-1">

@@ -69,7 +69,7 @@ const Weather = ({ cityData }) => {
 
     return average.toFixed(0);
   };
-  // console.log(weather)
+
   return (
         <>
           <h3 className="font-bold">Weather:</h3>
