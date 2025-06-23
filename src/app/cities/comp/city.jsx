@@ -100,7 +100,13 @@ const City = () => {
                 )}
 
                 {/* Map – spans 1 column */}
-                <div className="xl:col-span-1 xl:row-start-4">
+                <div
+                  className={
+                    cityData.facebook
+                      ? "xl:col-span-1 xl:row-start-4"
+                      : "xl:col-span-2 xl:row-span-3"
+                  }
+                >
                   <CityMap lat={cityData.lat} lon={cityData.lon} />
                 </div>
               </div>
