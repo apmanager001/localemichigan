@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Search } from "lucide-react";
+import MuseumsMap from "./museumsMap";
 
 const MuseumsPage = () => {
   const [museumData, setMuseumData] = useState([]);
@@ -81,7 +82,7 @@ const MuseumsPage = () => {
 
       {/* 🔍 Search + Name List */}
       <div className="flex flex-col md:flex-row items-center md:items-start md:justify-around mx-auto text-center ">
-        <LakesMap coordinates={validCoordinates} />
+        <MuseumsMap coordinates={validCoordinates} />
         <div>
         <div className="flex items-center justify-between mb-6">
           <label className="input input-bordered flex items-center gap-2">
