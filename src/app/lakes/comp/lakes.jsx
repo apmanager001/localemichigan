@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Search } from "lucide-react";
-import LakesMap from "./LakesMap";
+import LighthouseMap from '../../lighthouses/comp/lighthouseMap'
 
 const LakesPage = () => {
   const [lakesData, setLakesData] = useState([]);
@@ -82,7 +82,7 @@ const LakesPage = () => {
 
       {/* 🔍 Search + Name List */}
       <div className="flex flex-col md:flex-row items-center md:items-start md:justify-around mx-auto text-center ">
-        <LakesMap coordinates={validCoordinates} />
+        <LighthouseMap coordinates={validCoordinates} />
         <div>
           <div className="flex items-center justify-between mb-6">
             <label className="input input-bordered flex items-center gap-2">
@@ -107,7 +107,7 @@ const LakesPage = () => {
               <Link
                 key={entry.name}
                 href={`/lakes/${entry.name.toLowerCase().replace(/\s+/g, "_")}`}
-                className="btn btn-soft btn-info text-sm"
+                className="btn btn-soft btn-info text-sm max-w-64"
               >
                 {entry.name}
               </Link>

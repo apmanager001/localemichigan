@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Search } from "lucide-react";
-import ParksMap from "./parksMap";
+import LighthouseMap from "../../lighthouses/comp/lighthouseMap";
 
 const ParksPage = () => {
   const [parksData, setParksData] = useState([]);
@@ -81,45 +81,45 @@ const ParksPage = () => {
 
       {/* 🔍 Search + Name List */}
       <div className="flex flex-col md:flex-row items-center md:items-start md:justify-around mx-auto text-center ">
-        <ParksMap coordinates={validCoordinates} />
+        <LighthouseMap coordinates={validCoordinates} />
         <div>
-        <div className="flex items-center justify-between mb-6">
-          <label className="input input-bordered flex items-center gap-2">
-            <Search size={20} />
-            <input
-              type="text"
-              id='search'
-              className="grow"
-              placeholder="Search parks"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
-          </label>
-          <div className="text-gray-500 text-md">
-            <span className="text-gray-600 text-sm">Total: </span>
-            {parksData.length}
+          <div className="flex items-center justify-between mb-6">
+            <label className="input input-bordered flex items-center gap-2">
+              <Search size={20} />
+              <input
+                type="text"
+                id="search"
+                className="grow"
+                placeholder="Search parks"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+            </label>
+            <div className="text-gray-500 text-md">
+              <span className="text-gray-600 text-sm">Total: </span>
+              {parksData.length}
+            </div>
           </div>
-        </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
-          {visibleList.map((entry) => (
-            <Link
-              key={entry.name}
-              href={`/parks/${entry.name.toLowerCase().replace(/\s+/g, "_")}`}
-              className="btn btn-soft btn-success text-sm"
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+            {visibleList.map((entry) => (
+              <Link
+                key={entry.name}
+                href={`/parks/${entry.name.toLowerCase().replace(/\s+/g, "_")}`}
+                className="btn btn-soft btn-success text-sm max-w-64"
+              >
+                {entry.name}
+              </Link>
+            ))}
+          </div>
+          {!searchTerm && filteredNames.length > visibleCount && (
+            <button
+              className="btn btn-outline btn-success mt-6"
+              onClick={() => setVisibleCount(parksData.length)}
             >
-              {entry.name}
-            </Link>
-          ))}
-        </div>
-        {!searchTerm && filteredNames.length > visibleCount && (
-          <button
-            className="btn btn-outline btn-success mt-6"
-            onClick={() => setVisibleCount(parksData.length)}
-          >
-            View More Parks
-          </button>
-        )}
+              View More Parks
+            </button>
+          )}
         </div>
       </div>
     </section>

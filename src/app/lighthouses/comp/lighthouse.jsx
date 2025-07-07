@@ -112,7 +112,7 @@ const LighthousePage = () => {
                 href={`/lighthouses/${entry.name
                   .toLowerCase()
                   .replace(/\s+/g, "_")}`}
-                className="btn btn-soft btn-primary text-sm"
+                className="btn btn-soft btn-primary text-sm max-w-64"
               >
                 {entry.name}
               </Link>

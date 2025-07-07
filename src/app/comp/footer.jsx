@@ -45,18 +45,28 @@ const Footer = () => {
             </div>
 
             <div className="col-span-1">
-              {/* <div className="mt-3 grid space-y-3 ">
+              <div className="mt-3 grid space-y-3 ">
                 <p>
-                  <Link className="" href="/about">
-                    About us
+                  <Link className="" href="/lighthouses">
+                    Lighthouses
                   </Link>
                 </p>
                 <p>
-                  <Link className="" href="/independent">
-                    Game Devs
+                  <Link className="" href="/parks">
+                    Parks
                   </Link>
                 </p>
-              </div> */}
+                <p>
+                  <Link className="" href="/lakes">
+                    Lakes
+                  </Link>
+                </p>
+                <p>
+                  <Link className="" href="/museum">
+                    Museums
+                  </Link>
+                </p>
+              </div>
             </div>
 
             <div className="col-span-2">

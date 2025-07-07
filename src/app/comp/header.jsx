@@ -87,11 +87,11 @@ const Header = () => {
         </div>
       </div>
       <div className="navbar-center hidden md:flex justify-center flex-1">
-        <ul className="menu menu-horizontal px-1 font-extrabold text-lg">
+        <ul className="menu menu-horizontal px-1 font-extrabold text-lg w-full">
           {menu}
         </ul>
       </div>
-      <div className="navbar-end w-full md:w-auto flex gap-4 justify-center md:justify-end flex-1" >
+      <div className="navbar-end w-24 md:w-auto flex gap-4 justify-center md:justify-end flex-none " >
         <a className="btn btn-soft btn-success scroll-smooth" href="#map">
           Map
         </a>

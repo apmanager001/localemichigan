@@ -1,5 +1,6 @@
 "use client";
 import React, { useState,useEffect } from "react";
+import { Search } from "lucide-react";
 import Link from "next/link";
 import useCityStore from '../../comp/store/cityStore'
 
@@ -49,20 +50,26 @@ const Cities = () => {
           </div>
         </div>
         <div className="flex justify-center mb-6">
-          <input
-            type="text"
-            name="search"
-            placeholder="Search Cities..."
-            className="input input-bordered w-full max-w-md"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-          />
+          <label className="input input-bordered flex items-center gap-2">
+            <Search size={20} />
+            <input
+              type="text"
+              id="search"
+              className="grow"
+              placeholder="Search Cities"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+            />
+          </label>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2  w-full text-center overflow-hidden pb-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2  w-full text-center overflow-hidden pb-10">
           {filteredCities.map((city, index) => (
             <div key={index} className="col-span-1">
               <Link href={`/cities/${city.name.replace(/\s+/g, "_")}`}>
-                <option value={city.name} className="underline">
+                <option
+                  value={city.name}
+                  className="btn btn-soft btn-primary text-sm"
+                >
                   {city.name}
                 </option>
               </Link>
