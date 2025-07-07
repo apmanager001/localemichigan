@@ -15,7 +15,7 @@ const LighthouseMap = ({ coordinates }) => {
     : { lat: 44.5, lon: -84.5 }; // fallback center for Michigan
 
   return (
-    <div className="h-96 w-96 md:w-1/2 overflow-hidden relative my-10 md:my-0" id="map">
+    <div className="h-96 w-full md:w-1/2 overflow-hidden relative my-10 md:my-0" id="map">
       <Map
         key={`22`}
         initialViewState={{
