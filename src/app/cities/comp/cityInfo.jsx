@@ -70,7 +70,6 @@ const CityInfo = ({ cityData }) => {
             </ul>
           </li>
         )}
-
         <li>
           <strong>Zip Codes:</strong>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-1 ml-2 mt-1 text-gray-700">

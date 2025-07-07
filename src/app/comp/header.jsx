@@ -11,6 +11,18 @@ const Header = () => {
         <a href="/cities">Cities</a>
       </li>
       <li>
+        <a href="/lighthouses">Lighthouses</a>
+      </li>
+      <li>
+        <a href="/lakes">Lakes</a>
+      </li>
+      <li>
+        <a href="/parks">Parks</a>
+      </li>
+      <li>
+        <a href="/museum">Museums</a>
+      </li>
+      <li>
         <a href="/about">About</a>
       </li>
       {/* <li>
@@ -83,7 +95,7 @@ const Header = () => {
         <a className="btn btn-soft btn-success scroll-smooth" href="#map">
           Map
         </a>
-        <HomepageWeather />
+        {/* <HomepageWeather /> */}
       </div>
     </div>
   );
