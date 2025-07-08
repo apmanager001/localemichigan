@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import museumImage from "../images/museum.webp";
 import { Search } from "lucide-react";
 import LighthouseMap from "../../lighthouses/comp/lighthouseMap";
 
@@ -40,9 +42,11 @@ const MuseumsPage = () => {
     <section className="bg-base-100 py-16 px-6">
       {/* 🏛️ Hero Banner */}
       <div className="relative w-full h-[400px] mb-12 overflow-hidden rounded-xl shadow-lg">
-        <img
-          src="/lighthouse/museum.webp" // Update path to your museum banner image
+        <Image
+          src={museumImage} // Update path to your museum banner image
           alt="Michigan Museums"
+          fill
+          priority
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 text-center">
@@ -62,7 +66,7 @@ const MuseumsPage = () => {
             className="card bg-base-200 shadow-md hover:shadow-xl transition duration-200"
           >
             <div className="card-body items-center text-center">
-              <h2 className="card-title text-secondary">{museum.name}</h2>
+              <h2 className="card-title text-black">{museum.name}</h2>
               <p className="text-sm">
                 Location: {museum.city || museum.county || "—"}
               </p>
@@ -118,6 +122,7 @@ const MuseumsPage = () => {
           {!searchTerm && filteredNames.length > visibleCount && (
             <button
               className="btn btn-outline btn-secondary mt-6"
+              aria-label="View More Museums"
               onClick={() => setVisibleCount(museumData.length)}
             >
               View More Museums

@@ -1,5 +1,7 @@
 'use client'
 import React, {useState, useEffect} from 'react'
+import Image from 'next/image'
+import defaultNews from './images/news.webp'
 import Link from 'next/link'
 
 const News = () => {
@@ -61,9 +63,15 @@ const News = () => {
             className="card bg-base-100 shadow-sm hover:shadow-md transition-shadow text-sm h-64 w-52"
           >
             <figure className="h-28 overflow-hidden">
-              <img
-                src={article.image || "/default-news.jpg"}
-                alt={article.title}
+              <Image
+                src={
+                  article.image && article.image.startsWith("http")
+                    ? article.image
+                    : defaultNews
+                }
+                width={500}
+                height={500}
+                alt={article.title || "News image"}
                 className="w-full h-full object-cover"
               />
             </figure>

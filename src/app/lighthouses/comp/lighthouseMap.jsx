@@ -15,7 +15,10 @@ const LighthouseMap = ({ coordinates }) => {
     : { lat: 44.5, lon: -84.5 }; // fallback center for Michigan
 
   return (
-    <div className="h-96 w-full md:w-1/2 overflow-hidden relative my-10 md:my-0" id="map">
+    <div
+      className="h-96 w-full md:w-1/2 overflow-hidden relative my-10 md:my-0"
+      id="map"
+    >
       <Map
         key={`22`}
         initialViewState={{
@@ -48,12 +51,14 @@ const LighthouseMap = ({ coordinates }) => {
       <div className="absolute top-2 left-2 flex flex-col gap-1 z-10">
         <button
           onClick={handleZoomIn}
+          aria-label="Zoom In"
           className="p-2 bg-white hover:bg-gray-100 rounded shadow-md"
         >
           <Plus />
         </button>
         <button
           onClick={handleZoomOut}
+          aria-label="Zoom Out"
           className="p-2 bg-white hover:bg-gray-100 rounded shadow-md"
         >
           <Minus />

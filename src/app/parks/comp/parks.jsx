@@ -1,6 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import parkImage from "../images/park.webp";
 import { Search } from "lucide-react";
 import LighthouseMap from "../../lighthouses/comp/lighthouseMap";
 
@@ -39,9 +41,11 @@ const ParksPage = () => {
     <section className="bg-base-100 py-16 px-6">
       {/* 🏞️ Hero Banner */}
       <div className="relative w-full h-[400px] mb-12 overflow-hidden rounded-xl shadow-lg">
-        <img
-          src="/lighthouse/park.webp"
+        <Image
+          src={parkImage}
           alt="Michigan Parks"
+          fill
+          priority
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 text-center">
@@ -61,7 +65,7 @@ const ParksPage = () => {
             className="card bg-base-200 shadow-md hover:shadow-xl transition duration-200"
           >
             <div className="card-body items-center text-center">
-              <h2 className="card-title text-success">{park.name}</h2>
+              <h2 className="card-title text-black">{park.name}</h2>
               <p className="text-sm">
                 Location: {park.city || park.county || "—"}
               </p>
@@ -115,6 +119,7 @@ const ParksPage = () => {
           {!searchTerm && filteredNames.length > visibleCount && (
             <button
               className="btn btn-outline btn-success mt-6"
+              aria-label="View More Parks"
               onClick={() => setVisibleCount(parksData.length)}
             >
               View More Parks

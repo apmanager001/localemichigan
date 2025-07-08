@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import lighthouseImage from '../images/lighthouse.webp'
 import { Search } from "lucide-react";
 import LighthouseMap from "./lighthouseMap";
 
@@ -43,10 +45,12 @@ const LighthousePage = () => {
     <section className="bg-base-100 py-16 px-6">
       {/* 🏠 Hero */}
       <div className="relative w-full h-96 mb-12 overflow-hidden rounded-xl shadow-lg">
-        <img
-          src="/lighthouse/lighthouse.webp"
+        <Image
+          src={lighthouseImage}
           alt="Michigan Lighthouse"
-          className="absolute inset-0 w-full h-full object-cover"
+          fill
+          priority
+          className="absolute  w-full h-full object-cover"
         />
 
         <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 text-center">
@@ -66,7 +70,7 @@ const LighthousePage = () => {
             className="card bg-base-200 shadow-md hover:shadow-xl transition duration-200"
           >
             <div className="card-body items-center text-center">
-              <h2 className="card-title text-secondary">{light.name}</h2>
+              <h2 className="card-title text-black">{light.name}</h2>
               <p className="text-sm">
                 Operated by: {light.operator || "Unknown"}
               </p>

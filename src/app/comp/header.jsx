@@ -45,7 +45,7 @@ const Header = () => {
   );
 
   return (
-    <div className="navbar flex-col sm:flex-row items-start sm:items-center bg-base-100 shadow-sm">
+    <header className="navbar flex-col sm:flex-row items-start sm:items-center bg-base-100 shadow-sm">
       <div className="navbar-start flex flex-1">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -97,7 +97,7 @@ const Header = () => {
         </a>
         {/* <HomepageWeather /> */}
       </div>
-    </div>
+    </header>
   );
 }
 

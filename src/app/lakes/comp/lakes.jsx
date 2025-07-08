@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
+import lakeImage from "../images/lakes.webp";
 import { Search } from "lucide-react";
 import LighthouseMap from '../../lighthouses/comp/lighthouseMap'
 
@@ -40,9 +42,11 @@ const LakesPage = () => {
     <section className="bg-base-100 py-16 px-6">
       {/* 🌊 Hero Banner */}
       <div className="relative w-full h-[400px] mb-12 overflow-hidden rounded-xl shadow-lg">
-        <img
-          src="/lighthouse/lakes.webp" // Update path to your lake banner image
+        <Image
+          src={lakeImage} // Update path to your lake banner image
           alt="Michigan Lakes"
+          fill
+          priority
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 text-center">
@@ -62,7 +66,7 @@ const LakesPage = () => {
             className="card bg-base-200 shadow-md hover:shadow-xl transition duration-200"
           >
             <div className="card-body items-center text-center">
-              <h2 className="card-title text-info">{lake.name}</h2>
+              <h2 className="card-title text-black">{lake.name}</h2>
               <p className="text-sm">
                 Region: {lake.region || lake.county || "—"}
               </p>
@@ -117,6 +121,7 @@ const LakesPage = () => {
           {!searchTerm && filteredNames.length > visibleCount && (
             <button
               className="btn btn-outline btn-info mt-6"
+              aria-label="View More Lakes"
               onClick={() => setVisibleCount(lakesData.length)}
             >
               View More Lakes
