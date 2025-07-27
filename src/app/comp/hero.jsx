@@ -6,7 +6,7 @@ const Hero = () => {
  
   const divPosition = "w-1/3 h-2/3 z-50";
   return (
-    <div className="relative lg:min-h-screen my-10 flex flex-col lg:flex-row">
+    <div className="relative lg:min-h-screen mb-10 flex flex-col lg:flex-row">
       <div className="w-full lg:w-1/3 p-8 flex items-center">
         <div>
           <h1 className="text-5xl font-bold mb-4">Explore Michigan</h1>

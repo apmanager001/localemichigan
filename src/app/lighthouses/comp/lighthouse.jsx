@@ -3,8 +3,8 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import lighthouseImage from '../images/lighthouse.webp'
-import { Search } from "lucide-react";
+import lighthouseImage from "../images/lighthouse.webp";
+import { Search, Lightbulb, MapPin, Anchor } from "lucide-react";
 import LighthouseMap from "./lighthouseMap";
 
 const LighthousePage = () => {
@@ -16,7 +16,6 @@ const LighthousePage = () => {
     fetch("/data/lighthouse.json")
       .then((res) => res.json())
       .then((data) => {
-        // 🧼 Filter out duplicates by name
         const unique = data.filter(
           (item, index, self) =>
             index === self.findIndex((t) => t.name === item.name)
@@ -25,12 +24,8 @@ const LighthousePage = () => {
       })
       .catch((err) => console.error("Failed to load lighthouse data:", err));
   }, []);
-  
-  
-
 
   useEffect(() => {
-    // Shuffle and pick 3 random lighthouses
     const shuffled = [...lighthouseData].sort(() => 0.5 - Math.random());
     setFeatured(shuffled.slice(0, 3));
   }, [lighthouseData]);
@@ -40,91 +35,157 @@ const LighthousePage = () => {
   );
   const validCoordinates = lighthouseData.filter(
     (light) => light.latitude && light.longitude
-  );  
+  );
+  
   return (
-    <section className="bg-base-100 py-16 px-6">
-      {/* 🏠 Hero */}
-      <div className="relative w-full h-96 mb-12 overflow-hidden rounded-xl shadow-lg">
+    <div className="min-h-screen relative">
+      {/* Hero Section */}
+      <div className="relative w-full h-[500px] overflow-hidden">
         <Image
           src={lighthouseImage}
-          alt="Michigan Lighthouse"
+          alt="Michigan Lighthouses"
           fill
           priority
-          className="absolute  w-full h-full object-cover"
+          className="object-cover"
         />
-
-        <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 text-center">
-          <h1 className="text-4xl font-bold mb-2">Michigan Lighthouses</h1>
-          <p className="text-lg max-w-xl">
-            From the shores of Lake Superior to the tip of Lake Erie, discover
-            the beacons that guide Michigan’s maritime heritage.
-          </p>
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/60 via-blue-800/40 to-blue-900/70"></div>
+        
+        {/* Hero Content */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="text-center text-white px-6 max-w-4xl">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full mb-6 border border-white/30">
+              <Lightbulb className="w-8 h-8 text-white" />
+            </div>
+            <h1 className="text-5xl md:text-6xl font-bold mb-4">
+              Michigan Lighthouses
+            </h1>
+            <p className="text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed">
+              From the shores of Lake Superior to the tip of Lake Erie, discover the beacons that guide Michigan's maritime heritage.
+            </p>
+          </div>
         </div>
       </div>
 
-      {/* 🌟 Featured Showcase */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-        {featured.map((light) => (
-          <div
-            key={light.name}
-            className="card bg-base-200 shadow-md hover:shadow-xl transition duration-200"
-          >
-            <div className="card-body items-center text-center">
-              <h2 className="card-title text-black">{light.name}</h2>
-              <p className="text-sm">
-                Operated by: {light.operator || "Unknown"}
-              </p>
-              {light.website && (
-                <Link
-                  href={light.website}
-                  target="_blank"
-                  className="btn btn-link btn-sm mt-2"
-                >
-                  Website
-                </Link>
-              )}
+      {/* Content Section */}
+      <div className="bg-white relative z-10">
+        <div className="max-w-7xl mx-auto px-6 py-12">
+          {/* Stats Section */}
+          <div className="text-center mb-12">
+            <div className="flex justify-center items-center space-x-8 mb-8">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-blue-600">{lighthouseData.length}</div>
+                <div className="text-sm text-gray-500">Total Lighthouses</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-cyan-600">{filteredNames.length}</div>
+                <div className="text-sm text-gray-500">Showing</div>
+              </div>
             </div>
           </div>
-        ))}
-      </div>
 
-      {/* 🔍 Search + Name List */}
-      <div className="flex flex-col md:flex-row items-center md:items-start md:justify-around mx-auto text-center ">
-        <LighthouseMap coordinates={validCoordinates} />
-        <div>
-          <div className="flex items-center justify-between mb-6">
-            <label className="input input-bordered flex items-center justify-between gap-2">
-              <Search size={20} />
-              <input
-                type="text"
-                id="search"
-                className="grow"
-                placeholder="Search lighthouses"
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-              />
-            </label>
-            <div className="text-gra</div>y-500 text-md">
-              <span className="text-gray-600 text-sm">Total: </span>
-              {lighthouseData.length}
-            </div>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
-            {filteredNames.map((entry) => (
-              <Link
-                key={entry.name}
-                href={`/lighthouses/${entry.name
-                  .toLowerCase()
-                  .replace(/\s+/g, "_")}`}
-                className="btn btn-soft btn-primary text-sm max-w-64"
+          {/* Featured Lighthouses */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            {featured.map((light) => (
+              <div
+                key={light.name}
+                className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 border border-blue-100 hover:border-blue-200"
               >
-                {entry.name}
-              </Link>
+                <div className="flex flex-col items-center text-center">
+                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mb-4">
+                    <Lightbulb className="w-6 h-6 text-white" />
+                  </div>
+                  <h2 className="text-xl font-semibold text-gray-800 mb-2">
+                    {light.name}
+                  </h2>
+                  <p className="text-sm text-gray-600 mb-4">
+                    Operated by: {light.operator || "Unknown"}
+                  </p>
+                  {light.website && (
+                    <Link
+                      href={light.website}
+                      target="_blank"
+                      className="inline-flex items-center px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors text-sm"
+                    >
+                      Visit Website
+                    </Link>
+                  )}
+                </div>
+              </div>
             ))}
           </div>
+
+          {/* Search and Map Section */}
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Map */}
+            <div className="order-2 lg:order-1">
+              <div className="bg-gray-50 rounded-xl p-4 shadow-sm">
+                <h3 className="text-lg font-semibold text-gray-800 mb-4 flex items-center">
+                  <MapPin className="w-5 h-5 mr-2 text-blue-500" />
+                  Lighthouse Locations
+                </h3>
+                <LighthouseMap coordinates={validCoordinates} />
+              </div>
+            </div>
+
+            {/* Search and List */}
+            <div className="order-1 lg:order-2">
+              {/* Search */}
+              <div className="mb-8">
+                <div className="relative">
+                  <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+                    <Search className="h-5 w-5 text-gray-400" />
+                  </div>
+                  <input
+                    id="search"
+                    type="text"
+                    placeholder="Search for a lighthouse..."
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                    className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-lg shadow-sm transition-all duration-200"
+                  />
+                </div>
+                {searchTerm && (
+                  <div className="mt-2 text-sm text-gray-500">
+                    {filteredNames.length === 0 ? (
+                      <span className="text-red-500">No lighthouses found matching "{searchTerm}"</span>
+                    ) : (
+                      <span>Found {filteredNames.length} lighthouses</span>
+                    )}
+                  </div>
+                )}
+              </div>
+
+              {/* Lighthouse List */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {filteredNames.map((entry) => (
+                  <Link
+                    key={entry.name}
+                    href={`/lighthouses/${entry.name.toLowerCase().replace(/\s+/g, "_")}`}
+                    className="group"
+                  >
+                    <div className="bg-white rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-200 border border-gray-200 hover:border-blue-300 hover:bg-blue-50">
+                      <div className="flex items-center">
+                        <Lightbulb className="w-4 h-4 text-blue-500 mr-3 group-hover:text-blue-600 transition-colors" />
+                        <span className="text-sm font-medium text-gray-800 group-hover:text-blue-600 transition-colors">
+                          {entry.name}
+                        </span>
+                      </div>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Footer Info */}
+          <div className="text-center mt-16 pt-8 border-t border-gray-200">
+            <p className="text-sm text-gray-500">
+              Explore Michigan's maritime heritage through historic lighthouses that have guided ships for generations.
+            </p>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -16,7 +16,7 @@ const LighthouseMap = ({ coordinates }) => {
 
   return (
     <div
-      className="h-96 w-full md:w-1/2 overflow-hidden relative my-10 md:my-0"
+      className="h-96 w-full  overflow-hidden relative my-10 md:my-0"
       id="map"
     >
       <Map

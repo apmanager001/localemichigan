@@ -3,6 +3,14 @@
   themes: light --default, emerald --prefersdark;
 }
 
+/* Ensure header spans full width */
+header {
+  width: 100vw !important;
+  left: 0 !important;
+  right: 0 !important;
+  height: auto !important;
+}
+
 /* :root {
   --background: #ffffff;
   --foreground: #171717;

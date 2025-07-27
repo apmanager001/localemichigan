@@ -14,6 +14,16 @@ const nextConfig: NextConfig = {
         hostname: "www.mlive.com",
         pathname: "/resizer/v2/**",
       },
+      {
+        protocol: "https",
+        hostname: "ewscripps.brightspotcdn.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.wlns.com",
+        pathname: "/**",
+      },
     ],
   },
   env: {

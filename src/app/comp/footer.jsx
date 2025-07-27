@@ -1,138 +1,192 @@
 import React from "react";
 import Link from "next/link";
-// import Newsletter from "./newsletter";
-// import { gameLinks, kidLinks } from "./headerComps/headerLinks";
-import { Home, Gamepad2, ClipboardList, Menu } from "lucide-react";
-// import FooterDrawer from "./footerDrawer";
+import Image from "next/image";
+import {
+  MapPin,
+  Building2,
+  Lightbulb,
+  Mountain,
+  Waves,
+  Info,
+  Mail,
+  ExternalLink,
+  Heart,
+} from "lucide-react";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
+  const navigation = {
+    explore: [
+      { name: "Cities", href: "/cities", icon: Building2 },
+      { name: "Lighthouses", href: "/lighthouses", icon: Lightbulb },
+      { name: "Parks", href: "/parks", icon: Mountain },
+      { name: "Lakes", href: "/lakes", icon: Waves },
+      { name: "Museums", href: "/museum", icon: Building2 },
+    ],
+    about: [
+      { name: "About Us", href: "/about", icon: Info },
+      { name: "Contact", href: "mailto:hello@localemichigan.com", icon: Mail },
+    ],
+  };
+
   return (
-    <>
-      <footer className="block mt-auto w-full z-10 bg-base-200">
-        <div className="mt-auto w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
-            <div className="col-span-full lg:col-span-1">
-              <a
-                className="flex-none text-xl font-semibold focus:outline-none focus:opacity-80"
-                href="#"
-                aria-label="Brand"
-              >
-                Locale Michigan
-              </a>
+    <footer className="bg-gradient-to-br from-gray-50 to-gray-100 border-t border-gray-200">
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        {/* Main Footer Content */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          {/* Brand Section */}
+          <div className="lg:col-span-1">
+            <div className="flex items-center space-x-3 mb-4">
+              <div className="relative w-10 h-10">
+                <Image
+                  src="/icon.png"
+                  alt="Locale Michigan"
+                  fill
+                  sizes="40px"
+                  className="object-contain"
+                />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">
+                  Locale Michigan
+                </h3>
+                <p className="text-sm text-gray-600">
+                  Discover the Great Lakes State
+                </p>
+              </div>
             </div>
+            <p className="text-gray-600 text-sm leading-relaxed mb-4">
+              Your comprehensive guide to Michigan's cities, parks, lakes,
+              lighthouses, and museums. Explore the rich culture and natural
+              beauty of the Great Lakes State.
+            </p>
+            <div className="flex items-center text-sm text-gray-500">
+              <Heart className="w-4 h-4 mr-1 text-red-500" />
+              <span>Made with love for Michigan</span>
+            </div>
+          </div>
 
-            <ul className="flex flex-col gap-y-2">
-              <li>
-                <Link
-                  href="/cities"
-                  className="hover:text-gray-600 hover:underline"
-                >
-                  All City's
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/about"
-                  className="hover:text-gray-600 hover:underline"
-                >
-                  About Us
-                </Link>
-              </li>
-            </ul>
-
+          {/* Explore Section */}
+          <div>
+            <h4 className="font-semibold text-gray-900 mb-4 flex items-center">
+              <MapPin className="w-4 h-4 mr-2 text-blue-500" />
+              Explore Michigan
+            </h4>
             <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/lighthouses"
-                  className="hover:text-gray-600 hover:underline"
-                >
-                  Lighthouses
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/parks"
-                  className="hover:text-gray-600 hover:underline"
-                >
-                  Parks
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/lakes"
-                  className="hover:text-gray-600 hover:underline"
-                >
-                  Lakes
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/museum"
-                  className="hover:text-gray-600 hover:underline"
-                >
-                  Museums
-                </Link>
-              </li>
+              {navigation.explore.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-200 group"
+                    >
+                      <Icon className="w-4 h-4 mr-2 group-hover:text-blue-500 transition-colors" />
+                      <span className="text-sm">{item.name}</span>
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
-
-            <div className="col-span-2">
-              {/* <h4 className="font-semibold">
-                Get Updates on New Games:
-              </h4> */}
-
-              {/* <Newsletter /> */}
-            </div>
           </div>
 
-          <div className="mt-5 sm:mt-12 grid gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center">
-            <div className="flex justify-between items-center">
-              <p className="text-sm text-gray-900">© 2025 Locale Michigan.</p>
+          {/* About Section */}
+          <div>
+            <h4 className="font-semibold text-gray-900 mb-4">About</h4>
+            <ul className="space-y-3">
+              {navigation.about.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <li key={item.name}>
+                    <Link
+                      href={item.href}
+                      className="flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-200 group"
+                    >
+                      <Icon className="w-4 h-4 mr-2 group-hover:text-blue-500 transition-colors" />
+                      <span className="text-sm">{item.name}</span>
+                      {item.href.startsWith("mailto:") && (
+                        <ExternalLink className="w-3 h-3 ml-1 opacity-60" />
+                      )}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+
+          {/* Contact & Info Section */}
+          <div>
+            <h4 className="font-semibold text-gray-900 mb-4">Get in Touch</h4>
+            <div className="space-y-3">
+              <div className="flex items-center text-gray-600">
+                <Mail className="w-4 h-4 mr-2 text-blue-500" />
+                <a
+                  href="mailto:hello@localemichigan.com"
+                  className="text-sm hover:text-blue-600 transition-colors duration-200"
+                >
+                  hello@localemichigan.com
+                </a>
+              </div>
+              <div className="text-sm text-gray-600 leading-relaxed">
+                <p>Have suggestions or want to share your Michigan story?</p>
+                <p className="mt-2">We'd love to hear from you!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className="border-t border-gray-200 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            {/* Copyright */}
+            <div className="text-sm text-gray-600">
+              © {currentYear} Locale Michigan. All rights reserved.
             </div>
 
-            <div className="underline">
-              <a href="mailto:contact@localemichigan.com">
-                contact@localemichigan.com
+            {/* Quick Links */}
+            <div className="flex items-center space-x-6 text-sm">
+              <Link
+                href="/about"
+                className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
+              >
+                About
+              </Link>
+              <Link
+                href="/cities"
+                className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
+              >
+                Cities
+              </Link>
+              <Link
+                href="/parks"
+                className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
+              >
+                Parks
+              </Link>
+              <a
+                href="mailto:hello@localemichigan.com"
+                className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
+              >
+                Contact
               </a>
             </div>
           </div>
-        </div>
-      </footer>
-      {/* <footer className="block md:hidden fixed bottom-0 left-0 right-0 bg-base-200 p-2 w-full">
-        <div className="flex justify-around items-center">
-          <a
-            href="/"
-            className=""
-            aria-label="Home"
-          >
-            <Home size={36} />
-          </a>
-          <a
-            href="/games"
-            className=""
-            aria-label="Games"
-          >
-            <Gamepad2 size={36} />
-          </a>
-          <a
-            href="/leaderboard"
-            className=""
-            aria-label="Leaderboard"
-          >
-            <ClipboardList size={36} />
-          </a>
-          <div className="drawer drawer-end w-auto">
-            <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
-            <div className="drawer-content text-gray-400 hover:text-gray-200 transition-all duration-300">
-              <label htmlFor="my-drawer-4">
-                <Menu size={36} className="cursor-pointer" />
-              </label>
+
+          {/* Additional Info */}
+          <div className="mt-6 pt-6 border-t border-gray-200">
+            <div className="text-center text-xs text-gray-500">
+              <p>
+                Locale Michigan is your gateway to discovering the beauty,
+                culture, and communities of the Great Lakes State. From bustling
+                cities to serene lakes, historic lighthouses to pristine parks,
+                we're here to help you explore everything Michigan has to offer.
+              </p>
             </div>
-         <FooterDrawer /> 
           </div>
         </div>
-      </footer> 
-      */}
-    </>
+      </div>
+    </footer>
   );
 };
 

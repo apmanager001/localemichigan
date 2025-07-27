@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://localemichigan.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow admin or private areas (if any)
+Disallow: /api/
+Disallow: /admin/
+Disallow: /private/
+
+# Allow important pages
+Allow: /cities/
+Allow: /parks/
+Allow: /lakes/
+Allow: /lighthouses/
+Allow: /museum/
+Allow: /news/
+Allow: /about/ 
