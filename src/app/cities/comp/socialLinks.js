@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { Building2, History, ExternalLink } from "lucide-react";
 import { SocialIcon } from "react-social-icons";
 
@@ -18,7 +19,13 @@ const SocialLinks = ({ cityData }) => {
       label: "Wikipedia",
       color: "bg-gray-500 hover:bg-gray-600",
       customIcon: (
-        <img src="/icons/wiki2.png" className="h-5 w-5" alt="Wikipedia" />
+        <Image
+          src="/icons/wiki2.png"
+          alt="Wikipedia"
+          width={20}
+          height={20}
+          className="h-5 w-5"
+        />
       ),
     },
     {
