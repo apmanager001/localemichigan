@@ -33,6 +33,11 @@ const nextConfig: NextConfig = {
         hostname: "www.wlns.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "michiganchronicle.com",
+        pathname: "/**",
+      },
     ],
   },
 
