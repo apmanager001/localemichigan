@@ -1833,7 +1833,7 @@
     "lon": -84.66023886526946,
     "lat": 43.37980596407184,
     "start_date": null,
-    "website": "http://www.ci.alma.mi.us",
+    "website": "https://myalma.org/",
     "sister_cities": [],
     "zip": [
       "48801",
@@ -1846,8 +1846,8 @@
     "landAreaSqMi": "5.93",
     "density": "1,582.3/sq mi (610.9/km2)",
     "wikiUrl": "https://en.wikipedia.org/wiki/Alma,_Michigan",
-    "facebook": null,
-    "youtube": null,
+    "facebook": "https://www.facebook.com/CityofAlma/",
+    "youtube": "https://www.youtube.com/@cityofalma7263",
     "instagram": null,
     "x": null
   },
