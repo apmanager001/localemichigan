@@ -40,7 +40,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative lg:min-h-screen flex items-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -59,7 +59,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-screen py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center py-20 lg:min-h-screen">
           {/* Left Column - Text Content */}
           <div className="text-white space-y-8">
             {/* Badge */}
@@ -121,6 +121,33 @@ const Hero = () => {
                 <div className="text-sm text-gray-300">Inland Lakes</div>
               </div>
             </div>
+
+            {/* Mobile Category Cards */}
+            <div className="lg:hidden pt-8 pb-16">
+              <div className="grid grid-cols-2 gap-3">
+                {categories.map((category) => {
+                  const Icon = category.icon;
+                  return (
+                    <Link
+                      key={category.name}
+                      href={category.href}
+                      className="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4 text-center hover:bg-white/20 transition-all duration-300"
+                    >
+                      <div className="flex flex-col items-center space-y-2">
+                        <div
+                          className={`w-12 h-12 rounded-full bg-gradient-to-r ${category.color} flex items-center justify-center`}
+                        >
+                          <Icon size={20} className="text-white" />
+                        </div>
+                        <span className="text-sm font-medium text-white">
+                          {category.name}
+                        </span>
+                      </div>
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
           </div>
 
           {/* Right Column - Category Cards */}
@@ -160,33 +187,6 @@ const Hero = () => {
           <div className="w-6 h-10 border-2 border-white/30 rounded-full flex justify-center">
             <div className="w-1 h-3 bg-white/50 rounded-full mt-2 animate-pulse"></div>
           </div>
-        </div>
-      </div>
-
-      {/* Mobile Category Cards */}
-      <div className="lg:hidden absolute bottom-20 left-0 right-0 z-10 px-4">
-        <div className="grid grid-cols-2 gap-3">
-          {categories.map((category) => {
-            const Icon = category.icon;
-            return (
-              <Link
-                key={category.name}
-                href={category.href}
-                className="group bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-4 text-center hover:bg-white/20 transition-all duration-300"
-              >
-                <div className="flex flex-col items-center space-y-2">
-                  <div
-                    className={`w-12 h-12 rounded-full bg-gradient-to-r ${category.color} flex items-center justify-center`}
-                  >
-                    <Icon size={20} className="text-white" />
-                  </div>
-                  <span className="text-sm font-medium text-white">
-                    {category.name}
-                  </span>
-                </div>
-              </Link>
-            );
-          })}
         </div>
       </div>
     </section>
