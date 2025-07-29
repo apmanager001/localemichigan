@@ -26,7 +26,7 @@ const Footer = () => {
     ],
     about: [
       { name: "About Us", href: "/about", icon: Info },
-      { name: "Contact", href: "mailto:hello@localemichigan.com", icon: Mail },
+      { name: "Contact", href: "mailto:contact@localemichigan.com", icon: Mail },
     ],
   };
 
@@ -122,10 +122,10 @@ const Footer = () => {
               <div className="flex items-center text-gray-600">
                 <Mail className="w-4 h-4 mr-2 text-blue-500" />
                 <a
-                  href="mailto:hello@localemichigan.com"
+                  href="mailto:contact@localemichigan.com"
                   className="text-sm hover:text-blue-600 transition-colors duration-200"
                 >
-                  hello@localemichigan.com
+                  contact@localemichigan.com
                 </a>
               </div>
               <div className="text-sm text-gray-600 leading-relaxed">
@@ -165,7 +165,7 @@ const Footer = () => {
                 Parks
               </Link>
               <a
-                href="mailto:hello@localemichigan.com"
+                href="mailto:contact@localemichigan.com"
                 className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
               >
                 Contact

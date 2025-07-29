@@ -70,7 +70,7 @@ const About = () => {
               contactPoint: {
                 "@type": "ContactPoint",
                 contactType: "customer service",
-                email: "hello@localemichigan.com",
+                email: "contact@localemichigan.com",
               },
               sameAs: ["https://localemichigan.com"],
             },
@@ -428,7 +428,7 @@ const About = () => {
               Michigan story? We'd love to hear from you!
             </p>
             <a
-              href="mailto:hello@localemichigan.com"
+              href="mailto:contact@localemichigan.com"
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-500 to-green-500 text-white font-semibold rounded-lg hover:from-blue-600 hover:to-green-600 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               <svg
