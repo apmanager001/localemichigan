@@ -108,9 +108,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth w-full">
       <head>
-        {/* Preload critical resources */}
-        <link rel="preload" href="/logo.png" as="image" type="image/png" />
-        <link rel="preload" href="/icon.png" as="image" type="image/png" />
+        {/* DNS prefetch for external resources */}
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
 
@@ -135,16 +133,6 @@ export default function RootLayout({
                 });
                 
                 observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
-                
-                // Preload critical resources
-                const criticalImages = ['/logo.png', '/icon.png'];
-                criticalImages.forEach(src => {
-                  const link = document.createElement('link');
-                  link.rel = 'preload';
-                  link.as = 'image';
-                  link.href = src;
-                  document.head.appendChild(link);
-                });
               }
             `,
           }}
