@@ -1,8 +1,9 @@
-import React from 'react'
-import NewsPage from '../comp/newsPage'
+import React from "react";
+import NewsPage from "../comp/newsPage";
 
 export async function generateMetadata({ params }) {
-  const searchTerm = params.id.toLowerCase();
+  const resolvedParams = await params;
+  const searchTerm = resolvedParams.id.toLowerCase();
 
   return {
     title: `${searchTerm.toUpperCase()} News | Locale Michigan`,
@@ -19,13 +20,14 @@ export async function generateMetadata({ params }) {
   };
 }
 
-const Page = ({params}) => {
- 
+const Page = async ({ params }) => {
+  const resolvedParams = await params;
+
   return (
     <div>
-      <NewsPage params={params} />
+      <NewsPage params={resolvedParams} />
     </div>
   );
-}
+};
 
-export default Page
+export default Page;

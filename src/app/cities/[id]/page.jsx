@@ -3,7 +3,8 @@ import path from "path";
 import City from "../comp/city";
 
 export async function generateMetadata({ params }) {
-  const cityName = params.id.toLowerCase().replace(/_/g, " ");
+  const resolvedParams = await params;
+  const cityName = resolvedParams.id.toLowerCase().replace(/_/g, " ");
   const citiesPath = path.resolve(process.cwd(), "public/data/cities.json");
   const file = await fs.readFile(citiesPath, "utf-8");
   const cities = JSON.parse(file);
@@ -28,9 +29,23 @@ export async function generateMetadata({ params }) {
     website,
   } = cityData;
 
-  const description = `Explore ${name}, Michigan — a ${place} in ${county} County with a 2020 population of ${Population2020}, covering ${landAreaSqMi} sq mi and a density of ${density}. Learn about its sister city connection with ${
-    sister_cities?.[0] || "international communities"
-  } and access local resources.`;
+  // Create description with null checks
+  const populationText = Population2020
+    ? `${Population2020.toLocaleString()}`
+    : "available population data";
+  const areaText = landAreaSqMi
+    ? `${landAreaSqMi} sq mi`
+    : "available area data";
+  const densityText = density
+    ? `${density} people/sq mi`
+    : "available density data";
+  const countyText = Array.isArray(county)
+    ? county.join(", ")
+    : county || "Michigan";
+  const placeText = place || "community";
+  const sisterCityText = sister_cities?.[0] || "international communities";
+
+  const description = `Explore ${name}, Michigan — a ${placeText} in ${countyText} County with a 2020 population of ${populationText}, covering ${areaText} and a density of ${densityText}. Learn about its sister city connection with ${sisterCityText} and access local resources.`;
 
   return {
     title: `${name} | Locale Michigan`,
@@ -42,14 +57,14 @@ export async function generateMetadata({ params }) {
       `${name} county`,
       `${name} Michigan attractions`,
       `${name} Michigan information`,
-      `${county} County Michigan`,
+      `${countyText} County Michigan`,
       "Michigan cities",
     ],
     openGraph: {
       title: `${name}, Michigan`,
       description,
       images: ["https://localemichigan.com/city.webp"],
-      url: `https://localemichigan.com/cities/${params.id}`,
+      url: `https://localemichigan.com/cities/${resolvedParams.id}`,
       siteName: "Locale Michigan",
       locale: "en_US",
       type: "website",
@@ -61,11 +76,15 @@ export async function generateMetadata({ params }) {
       images: ["https://localemichigan.com/city.webp"],
     },
     alternates: {
-      canonical: `https://localemichigan.com/cities/${params.id}`,
+      canonical: `https://localemichigan.com/cities/${resolvedParams.id}`,
     },
   };
 }
-const Page = ({ params }) => {
+
+const Page = async ({ params }) => {
+  const resolvedParams = await params;
+  const cityId = resolvedParams.id;
+
   return (
     <div>
       <script
@@ -74,15 +93,16 @@ const Page = ({ params }) => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "City",
-            "name": params.id.replace(/_/g, " "),
-            "url": `https://localemichigan.com/cities/${params.id}`,
-            "description": `Information about ${params.id.replace(/_/g, " ")}, Michigan including demographics, geography, and local resources`,
-            "addressRegion": "Michigan",
-            "addressCountry": "US",
-            "sameAs": [
-              `https://localemichigan.com/cities/${params.id}`
-            ]
-          })
+            name: cityId.replace(/_/g, " "),
+            url: `https://localemichigan.com/cities/${cityId}`,
+            description: `Information about ${cityId.replace(
+              /_/g,
+              " "
+            )}, Michigan including demographics, geography, and local resources`,
+            addressRegion: "Michigan",
+            addressCountry: "US",
+            sameAs: [`https://localemichigan.com/cities/${cityId}`],
+          }),
         }}
       />
       <City />

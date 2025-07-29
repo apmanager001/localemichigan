@@ -9,11 +9,15 @@ import "./globals.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -104,6 +108,48 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth w-full">
       <head>
+        {/* Preload critical resources */}
+        <link rel="preload" href="/logo.png" as="image" type="image/png" />
+        <link rel="preload" href="/icon.png" as="image" type="image/png" />
+        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+
+        {/* Performance monitoring script */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Performance monitoring
+              if (typeof window !== 'undefined') {
+                // Measure Core Web Vitals
+                const observer = new PerformanceObserver((list) => {
+                  const entries = list.getEntries();
+                  entries.forEach((entry) => {
+                    if (entry.entryType === 'largest-contentful-paint') {
+                      console.log('LCP:', entry.startTime);
+                    } else if (entry.entryType === 'first-input') {
+                      console.log('FID:', entry.processingStart - entry.startTime);
+                    } else if (entry.entryType === 'layout-shift') {
+                      console.log('CLS:', entry.value);
+                    }
+                  });
+                });
+                
+                observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
+                
+                // Preload critical resources
+                const criticalImages = ['/logo.png', '/icon.png'];
+                criticalImages.forEach(src => {
+                  const link = document.createElement('link');
+                  link.rel = 'preload';
+                  link.as = 'image';
+                  link.href = src;
+                  document.head.appendChild(link);
+                });
+              }
+            `,
+          }}
+        />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

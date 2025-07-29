@@ -112,7 +112,7 @@ export default function Home() {
       />
       <Hero />
       <TopCities />
-      <ExploreHero />
+      {/* <ExploreHero /> */}
       <News />
       <HomepageMap />
     </div>
