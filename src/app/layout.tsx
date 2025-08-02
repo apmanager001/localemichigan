@@ -112,32 +112,6 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
 
-        {/* Performance monitoring script */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              // Performance monitoring
-              if (typeof window !== 'undefined') {
-                // Measure Core Web Vitals
-                const observer = new PerformanceObserver((list) => {
-                  const entries = list.getEntries();
-                  entries.forEach((entry) => {
-                    if (entry.entryType === 'largest-contentful-paint') {
-                      console.log('LCP:', entry.startTime);
-                    } else if (entry.entryType === 'first-input') {
-                      console.log('FID:', entry.processingStart - entry.startTime);
-                    } else if (entry.entryType === 'layout-shift') {
-                      console.log('CLS:', entry.value);
-                    }
-                  });
-                });
-                
-                observer.observe({ entryTypes: ['largest-contentful-paint', 'first-input', 'layout-shift'] });
-              }
-            `,
-          }}
-        />
-
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

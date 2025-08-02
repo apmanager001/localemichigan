@@ -20,6 +20,11 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
+        hostname: "media1.metrotimes.com",
+        pathname: "/metrotimes/imager/u/magnum/**",
+      },
+      {
+        protocol: "https",
         hostname: "www.mlive.com",
         pathname: "/resizer/v2/**",
       },
