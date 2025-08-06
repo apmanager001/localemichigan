@@ -25,6 +25,12 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
+        hostname: "i0.wp.com",
+        pathname: "/www.michigandaily.com/wp-content/uploads/**",
+      },
+
+      {
+        protocol: "https",
         hostname: "www.mlive.com",
         pathname: "/resizer/v2/**",
       },

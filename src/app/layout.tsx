@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import Header from "./comp/header";
@@ -108,6 +109,15 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth w-full">
       <head>
+         {/* <!-- Google tag (gtag.js) --> */}
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-1KBLY2J0H4"></Script>
+        <Script id="google-analytics">
+         {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-1KBLY2J0H4');`}
+        </Script>
         {/* DNS prefetch for external resources */}
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
@@ -170,5 +180,5 @@ export default function RootLayout({
         </PostHogProvider>
       </body>
     </html>
-  );
+  ); 
 }
