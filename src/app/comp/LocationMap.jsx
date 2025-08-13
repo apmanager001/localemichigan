@@ -19,7 +19,7 @@ const LocationMap = ({
   if (!hasCoord) return null;
 
   const { latitude, longitude, name } = coordinate;
-  console.log(latitude, longitude, name);
+
   return (
     <div
       className={`w-full ${heightClass} overflow-hidden relative rounded-lg border border-gray-200`}
