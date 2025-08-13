@@ -12,7 +12,8 @@
     "lint": "next lint",
     "generate:sitemap": "node src/function/sitemap.js",
     "lighthouse": "lighthouse http://localhost:3000 --output=json --output-path=./lighthouse-report.json",
-    "bundle-analyzer": "npx @next/bundle-analyzer"
+    "bundle-analyzer": "npx @next/bundle-analyzer",
+    "enrich:lakes": "node scripts/enrich-lakes.mjs --limit=200"
   },
   "dependencies": {
     "@vis.gl/react-maplibre": "^8.0.4",

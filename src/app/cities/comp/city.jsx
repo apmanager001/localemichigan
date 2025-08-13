@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect, useMemo, useCallback } from "react";
+import Link from "next/link";
 import { useParams } from "next/navigation";
 import useCityStore from "../../comp/store/cityStore";
 import {
@@ -18,6 +19,12 @@ const City = () => {
   const [cityData, setCityData] = useState(null);
   const [selectedCity, setSelectedCity] = useState("");
   const [loading, setLoading] = useState(true);
+  const [nearby, setNearby] = useState({
+    lakes: [],
+    lighthouses: [],
+    museums: [],
+    parks: [],
+  });
 
   // Memoize the formatted city ID
   const formattedCityId = useMemo(() => {
@@ -76,6 +83,162 @@ const City = () => {
   useEffect(() => {
     setCityData(foundCity);
   }, [foundCity]);
+
+  // Fetch and compute nearby places (lakes, lighthouses, museums, parks)
+  useEffect(() => {
+    if (!cityData?.lat || !cityData?.lon) return;
+    const cityLat = Number(cityData.lat);
+    const cityLon = Number(cityData.lon);
+
+    const haversineKm = (lat1, lon1, lat2, lon2) => {
+      const toRad = (d) => (d * Math.PI) / 180;
+      const R = 6371; // km
+      const dLat = toRad(lat2 - lat1);
+      const dLon = toRad(lon2 - lon1);
+      const a =
+        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.cos(toRad(lat1)) *
+          Math.cos(toRad(lat2)) *
+          Math.sin(dLon / 2) *
+          Math.sin(dLon / 2);
+      const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      return R * c;
+    };
+
+    const slugify = (name, slug) =>
+      (slug && slug.length ? slug : name || "")
+        .toLowerCase()
+        .trim()
+        .replace(/[^a-z0-9_-]+/g, "_")
+        .replace(/^_+|_+$/g, "");
+
+    const within = (lat, lon, radiusKm) => {
+      if (typeof lat !== "number" || typeof lon !== "number") return false;
+      return haversineKm(cityLat, cityLon, lat, lon) <= radiusKm;
+    };
+
+    const byCityName = (entryCity) =>
+      (entryCity || "").toLowerCase() === (cityData.name || "").toLowerCase();
+
+    const loadAll = async () => {
+      try {
+        const [lakesRes, lightsRes, museumsRes, parksRes] = await Promise.all([
+          fetch("/data/lakes.json")
+            .then((r) => r.json())
+            .catch(() => []),
+          fetch("/data/lighthouse.json")
+            .then((r) => r.json())
+            .catch(() => []),
+          fetch("/data/museum.json")
+            .then((r) => r.json())
+            .catch(() => []),
+          fetch("/data/park.json")
+            .then((r) => r.json())
+            .catch(() => []),
+        ]);
+
+        // Radius heuristics (km)
+        const R_LAKE = 50;
+        const R_LIGHT = 60;
+        const R_MUSEUM = 40;
+        const R_PARK = 40;
+
+        const lakes = (lakesRes || [])
+          .filter(
+            (it) =>
+              byCityName(it.address_city) ||
+              within(Number(it.latitude), Number(it.longitude), R_LAKE)
+          )
+          .map((it) => ({
+            name: it.name,
+            slug: slugify(it.name, it.slug),
+            distanceKm: within(Number(it.latitude), Number(it.longitude), 10000)
+              ? haversineKm(
+                  cityLat,
+                  cityLon,
+                  Number(it.latitude),
+                  Number(it.longitude)
+                )
+              : null,
+          }))
+          .filter((it) => it.slug && it.slug.length > 0)
+          .sort((a, b) => (a.distanceKm ?? 1e9) - (b.distanceKm ?? 1e9))
+          .slice(0, 12);
+
+        const lighthouses = (lightsRes || [])
+          .filter(
+            (it) =>
+              byCityName(it.address_city) ||
+              within(Number(it.latitude), Number(it.longitude), R_LIGHT)
+          )
+          .map((it) => ({
+            name: it.name,
+            slug: slugify(it.name, it.slug),
+            distanceKm: within(Number(it.latitude), Number(it.longitude), 10000)
+              ? haversineKm(
+                  cityLat,
+                  cityLon,
+                  Number(it.latitude),
+                  Number(it.longitude)
+                )
+              : null,
+          }))
+          .filter((it) => it.slug && it.slug.length > 0)
+          .sort((a, b) => (a.distanceKm ?? 1e9) - (b.distanceKm ?? 1e9))
+          .slice(0, 12);
+
+        const museums = (museumsRes || [])
+          .filter(
+            (it) =>
+              byCityName(it.address_city) ||
+              within(Number(it.latitude), Number(it.longitude), R_MUSEUM)
+          )
+          .map((it) => ({
+            name: it.name,
+            slug: slugify(it.name, it.slug),
+            distanceKm: within(Number(it.latitude), Number(it.longitude), 10000)
+              ? haversineKm(
+                  cityLat,
+                  cityLon,
+                  Number(it.latitude),
+                  Number(it.longitude)
+                )
+              : null,
+          }))
+          .filter((it) => it.slug && it.slug.length > 0)
+          .sort((a, b) => (a.distanceKm ?? 1e9) - (b.distanceKm ?? 1e9))
+          .slice(0, 12);
+
+        const parks = (parksRes || [])
+          .filter(
+            (it) =>
+              byCityName(it.address_city) ||
+              within(Number(it.latitude), Number(it.longitude), R_PARK)
+          )
+          .map((it) => ({
+            name: it.name,
+            slug: slugify(it.name, it.slug),
+            distanceKm: within(Number(it.latitude), Number(it.longitude), 10000)
+              ? haversineKm(
+                  cityLat,
+                  cityLon,
+                  Number(it.latitude),
+                  Number(it.longitude)
+                )
+              : null,
+          }))
+          .filter((it) => it.slug && it.slug.length > 0)
+          .sort((a, b) => (a.distanceKm ?? 1e9) - (b.distanceKm ?? 1e9))
+          .slice(0, 12);
+
+        setNearby({ lakes, lighthouses, museums, parks });
+      } catch (e) {
+        // ignore failures
+      }
+    };
+
+    loadAll();
+  }, [cityData?.lat, cityData?.lon, cityData?.name]);
 
   // Loading state with proper dimensions to prevent layout shifts
   if (loading || !cityData) {
@@ -211,7 +374,7 @@ const City = () => {
 
             {/* Social Media Feeds */}
             {hasSocialFeeds && (
-              <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100  overflow-y-auto">
                 <div className="p-6 pb-0">
                   <h3 className="text-xl font-bold text-gray-800 mb-6">
                     Social Media
@@ -242,6 +405,122 @@ const City = () => {
                 </div>
               </div>
             )}
+
+            {/* Nearby Attractions */}
+            {nearby.lakes.length ||
+            nearby.lighthouses.length ||
+            nearby.museums.length ||
+            nearby.parks.length ? (
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+                <div className="p-6 pb-0">
+                  <h3 className="text-xl font-bold text-gray-800 mb-6">
+                    Nearby Attractions
+                  </h3>
+                </div>
+                <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {nearby.lakes.length > 0 && (
+                    <div>
+                      <h4 className="text-lg font-semibold text-cyan-700 mb-3">
+                        Lakes
+                      </h4>
+                      <ul className="space-y-2">
+                        {nearby.lakes.slice(0, 6).map((it) => (
+                          <li key={`lake-${it.slug}`}>
+                            <Link
+                              href={`/lakes/${it.slug}`}
+                              className="text-cyan-700 hover:underline"
+                            >
+                              {it.name}
+                              {typeof it.distanceKm === "number" && (
+                                <span className="text-gray-500 text-sm">
+                                  {" "}
+                                  • {it.distanceKm.toFixed(1)} km
+                                </span>
+                              )}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {nearby.lighthouses.length > 0 && (
+                    <div>
+                      <h4 className="text-lg font-semibold text-blue-700 mb-3">
+                        Lighthouses
+                      </h4>
+                      <ul className="space-y-2">
+                        {nearby.lighthouses.slice(0, 6).map((it) => (
+                          <li key={`light-${it.slug}`}>
+                            <Link
+                              href={`/lighthouses/${it.slug}`}
+                              className="text-blue-700 hover:underline"
+                            >
+                              {it.name}
+                              {typeof it.distanceKm === "number" && (
+                                <span className="text-gray-500 text-sm">
+                                  {" "}
+                                  • {it.distanceKm.toFixed(1)} km
+                                </span>
+                              )}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {nearby.museums.length > 0 && (
+                    <div>
+                      <h4 className="text-lg font-semibold text-purple-700 mb-3">
+                        Museums
+                      </h4>
+                      <ul className="space-y-2">
+                        {nearby.museums.slice(0, 6).map((it) => (
+                          <li key={`museum-${it.slug}`}>
+                            <Link
+                              href={`/museum/${it.slug}`}
+                              className="text-purple-700 hover:underline"
+                            >
+                              {it.name}
+                              {typeof it.distanceKm === "number" && (
+                                <span className="text-gray-500 text-sm">
+                                  {" "}
+                                  • {it.distanceKm.toFixed(1)} km
+                                </span>
+                              )}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {nearby.parks.length > 0 && (
+                    <div>
+                      <h4 className="text-lg font-semibold text-green-700 mb-3">
+                        Parks
+                      </h4>
+                      <ul className="space-y-2">
+                        {nearby.parks.slice(0, 6).map((it) => (
+                          <li key={`park-${it.slug}`}>
+                            <Link
+                              href={`/parks/${it.slug}`}
+                              className="text-green-700 hover:underline"
+                            >
+                              {it.name}
+                              {typeof it.distanceKm === "number" && (
+                                <span className="text-gray-500 text-sm">
+                                  {" "}
+                                  • {it.distanceKm.toFixed(1)} km
+                                </span>
+                              )}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </div>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>

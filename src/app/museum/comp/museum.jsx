@@ -169,7 +169,7 @@ const MuseumsPage = () => {
                 {visibleList.map((entry) => (
                   <Link
                     key={entry.name}
-                    href={`/museums/${entry.name
+                    href={`/museum/${entry.name
                       .toLowerCase()
                       .replace(/\s+/g, "_")}`}
                     className="group"

@@ -5,7 +5,10 @@
     "name": "New Presque Isle Light",
     "wikipedia": "en:New Presque Isle Light",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "new_presque_isle_light",
+    "description": "Presque Isle Township is a civil township of Presque Isle County in the U.S. state of Michigan.  The population was 1,698 at the 2020 census.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/PresqueIsle_LightStation_1.2k.jpg/960px-PresqueIsle_LightStation_1.2k.jpg"
   },
   {
     "latitude": 45.8430065,
@@ -13,7 +16,9 @@
     "name": "Round Island Passage Lighthouse",
     "historic": "yes",
     "wikipedia": "en:Round Island Passage Light",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "round_island_passage_lighthouse",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)"
   },
   {
     "latitude": 46.6726545,
@@ -23,14 +28,47 @@
     "wikipedia": "en:Au Sable Light",
     "building": "yes",
     "building_levels": "2",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "au_sable_point_lighthouse",
+    "description": "Au Sable Light is an active lighthouse in the Pictured Rocks National Lakeshore west of Grand Marais, Michigan off H-58.  Until 1910, this aid to navigation was called \"Big Sable Light\" (not to be confused with Big Sable Point Light near Ludington, Michigan on Lake Michigan or Little Sable Point Light south of Pentwater, Michigan).",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Au_Sable_Light_%28June_2021%29.jpg/960px-Au_Sable_Light_%28June_2021%29.jpg",
+    "location": "Pictured Rocks National Lakeshore on Lake Superior",
+    "coordinatesDms": "46.67306°N 86.139333°W",
+    "construction": "Brick, Italianate bracketing",
+    "marking": "White with black lantern",
+    "height": "87 feet (27 m)",
+    "heightM": 87,
+    "focalHeight": "107 feet (33 m)",
+    "focalHeightM": 107,
+    "range": "11 nautical miles (20 km; 13 mi)",
+    "rangeKm": 11,
+    "lens": "Third-order Fresnel lens (original), 12-inch (300 mm) acrylic (current)",
+    "characteristic": "Flashing white every 6 s",
+    "firstLit": "1874",
+    "foundation": "Wood pilings",
+    "shape": "Frustum of a cone",
+    "nearestCity": "Grand Marais, Michigan",
+    "architect": "Col. Orlando M. Poe",
+    "architecturalStyle": "Italianate bracketing",
+    "siteArea": "5 acres (2.0 ha)",
+    "siteAreaHa": 2.02,
+    "nrhpRefnum": "78000374",
+    "nrhpAddedDate": "May 23, 1978",
+    "mshsDesignationDate": "September 21, 1976",
+    "heritage": [
+      "National Register of Historic Places listed place",
+      "Michigan state historic site"
+    ]
   },
   {
     "latitude": 42.3470332,
     "longitude": -82.9542843,
     "name": "William Livingstone Memorial Lighthouse",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "william_livingstone_memorial_lighthouse",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)",
+    "wikipedia": "en:List of lighthouses in Michigan"
   },
   {
     "latitude": 44.991212,
@@ -38,7 +76,9 @@
     "name": "Old Mission Point Lighthouse",
     "wikipedia": "en:Mission Point Light",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "old_mission_point_lighthouse",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)"
   },
   {
     "latitude": 47.4596892,
@@ -49,7 +89,9 @@
     "historic": "heritage",
     "wikipedia": "en:Eagle Harbor Light",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "eagle_harbor_light",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)"
   },
   {
     "latitude": 47.3918858,
@@ -60,7 +102,9 @@
     "historic": "heritage",
     "wikipedia": "en:Sand Hills Light",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "sand_hills_lighthouse",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)"
   },
   {
     "latitude": 42.7727218,
@@ -68,7 +112,34 @@
     "name": "Holland Harbor Light",
     "wikipedia": "en:Holland Harbor Light",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "holland_harbor_light",
+    "description": "The Holland Harbor Light, known as Big Red, is located in Park Township, Michigan at the entrance of a channel connecting Lake Michigan with Lake Macatawa, and which gives access to the city of Holland, Michigan.\nThe lighthouse is on the south side of the channel. There are two modern lights marking the ends of the breakwaters that extend out into the Lake Michigan beyond the lighthouse.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Holland_Harbor_Lighthouse.jpg/960px-Holland_Harbor_Lighthouse.jpg",
+    "location": "Ottawa County, Michigan",
+    "coordinatesDms": "42.772694°N 86.212417°W",
+    "construction": "Wood",
+    "marking": "red",
+    "height": "42 feet (13 m)",
+    "heightM": 42,
+    "focalHeight": "15 m (49 ft)",
+    "focalHeightM": 4.57,
+    "range": "16 nmi (30 km; 18 mi) (white), 14 nmi (26 km; 16 mi) (red)",
+    "rangeKm": 29.63,
+    "lens": "Sixth order Fresnel lens (removed)",
+    "characteristic": "Alt WR 10s",
+    "firstLit": "1872",
+    "foundation": "Pier",
+    "shape": "Square",
+    "nearestCity": "Holland, Michigan",
+    "siteArea": "less than one acre",
+    "nrhpRefnum": "78001509",
+    "nrhpAddedDate": "July 20, 1978",
+    "mshsDesignationDate": "January 16, 1976",
+    "heritage": [
+      "National Register of Historic Places listed place",
+      "Michigan state historic site"
+    ]
   },
   {
     "latitude": 44.6913092,
@@ -80,7 +151,10 @@
     "historic": "lighthouse",
     "building": "yes",
     "start_date": "1858",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "pointe_betsie_lighthouse",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)",
+    "wikipedia": "en:List of lighthouses in Michigan"
   },
   {
     "latitude": 45.7447215,
@@ -88,7 +162,19 @@
     "name": "Sand Point Lighthouse",
     "wikipedia": "en:Sand Point Light",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "sand_point_lighthouse",
+    "description": "The Gibraltar Point Lighthouse is a lighthouse located on Hanlan's Point, the most westerly of the Toronto Islands in Toronto, Ontario, Canada. Begun in 1808, it is the oldest existing lighthouse on the Great Lakes, and one of Toronto's oldest buildings. The lighthouse is perhaps best known for the demise of its first keeper, German-born John Paul Radelmüller, whose 1815 murder forms the basis of Toronto's most enduring ghost story. Recent research has verified many aspects of the traditional tale of his death and identified the soldiers charged with but ultimately acquitted of the crime.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Gibraltar_Point_Lighthouse_2025-05-15.jpg/960px-Gibraltar_Point_Lighthouse_2025-05-15.jpg",
+    "location": "Toronto Islands",
+    "coordinatesDms": "43.613667°N 79.38528°W",
+    "deactivatedYear": "1956",
+    "construction": "stone tower",
+    "marking": "unpainted gray stone tower, red lantern",
+    "height": "25 metres (82 ft)",
+    "heightM": 7.62,
+    "firstLit": "1809",
+    "shape": "hexagonal tower with balcony and lantern"
   },
   {
     "latitude": 44.7127234,
@@ -96,13 +182,46 @@
     "name": "Sturgeon Point Light",
     "alt_name": "Sturgeon Point Lighthouse",
     "building": "lighthouse",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "sturgeon_point_light",
+    "description": "The Sturgeon Point Light Station is a lighthouse on Lake Huron in Haynes Township, Alcona County, northeastern lower Michigan. Established to ward mariners off a reef that extends 1.5 miles (2.4 km) lakeward from Sturgeon Point, it is today regarded as a historic example of a Cape Cod style Great Lakes lighthouse.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Sturgeon_Point_Lighthouse_%28July_2025%29.jpg/960px-Sturgeon_Point_Lighthouse_%28July_2025%29.jpg",
+    "wikipedia": "en:Sturgeon Point Light",
+    "location": "Haynes Township, Alcona County, Michigan, USA",
+    "coordinatesDms": "44.712694°N 83.272722°W",
+    "construction": "Brick",
+    "marking": "white daymark with red trim",
+    "height": "71 feet (22 m)",
+    "heightM": 71,
+    "focalHeight": "69 feet (21 m)",
+    "focalHeightM": 69,
+    "range": "9 nautical miles (17 km; 10 mi)",
+    "rangeKm": 9,
+    "lens": "Sixth order Fresnel Lens (original), 3½-order Fresnel Lens (current)",
+    "characteristic": "flash every six seconds",
+    "firstLit": "1869",
+    "foundation": "Limestone",
+    "shape": "Frustum of a cone",
+    "nearestCity": "Harrisville, Michigan",
+    "architect": "United States Lighthouse Board",
+    "architecturalStyle": "Cape Cod style",
+    "siteArea": "1 acre (0.40 ha)",
+    "siteAreaHa": 0.4,
+    "nrhpRefnum": "84001370",
+    "nrhpAddedDate": "July 19, 1984",
+    "mshsDesignationDate": "February 18, 1982",
+    "heritage": [
+      "National Register of Historic Places listed place"
+    ]
   },
   {
     "latitude": 41.8012567,
     "longitude": -86.7483649,
     "name": "New Buffalo Lighthouse",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "new_buffalo_lighthouse",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)",
+    "wikipedia": "en:List of lighthouses in Michigan"
   },
   {
     "latitude": 44.2539226,
@@ -111,7 +230,10 @@
     "website": "https://www.michigan.gov/mhc/museums/tawas",
     "operator": "DNR",
     "building": "lighthouse",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "tawas_point_lighthouse",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)",
+    "wikipedia": "en:List of lighthouses in Michigan"
   },
   {
     "latitude": 45.4862409,
@@ -126,7 +248,31 @@
     "historic": "yes",
     "wikipedia": "en:Forty Mile Point Light",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "forty_mile_point_light",
+    "description": "Forty Mile Point Light is a lighthouse in Presque Isle County near Hammond Bay on the western shore of Lake Huron in Rogers Township, Michigan USA.\nUnlike many Great Lakes lighthouses, Forty Mile Point Light does not mark a significant harbor or river mouth. Rather, it was constructed with the intent that as one sailed from Mackinaw Point to the Saint Clair River, one would never be out of viewing range of a lighthouse. The light is named because it is on 40 mile Point which is 40 miles (64 km) sailing distance from Old Mackinaw Point.\nIt is part of U.S. Coast Guard District No. 9.\n\n",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Forty_Mile_Point_Light_Station_-_Michigan.jpg",
+    "location": "Rogers Township, Michigan",
+    "coordinatesDms": "45.48667°N 83.91333°W",
+    "construction": "Brick",
+    "marking": "white w/black lantern",
+    "height": "52 feet (16 m)",
+    "heightM": 52,
+    "focalHeight": "66 feet (20 m)",
+    "focalHeightM": 66,
+    "range": "16 nautical miles (30 km; 18 mi)",
+    "rangeKm": 16,
+    "lens": "Fourth order Fresnel lens",
+    "characteristic": "white 3 second flash every 6 seconds.",
+    "firstLit": "1897",
+    "foundation": "Limestone",
+    "shape": "Square",
+    "nrhpRefnum": "84001830",
+    "nrhpAddedDate": "July 19, 1984",
+    "heritage": [
+      "National Register of Historic Places listed place",
+      "Michigan state historic site"
+    ]
   },
   {
     "latitude": 45.00759,
@@ -137,7 +283,33 @@
     "historic": "maritime",
     "wikipedia": "en:South Manitou Island Lighthouse",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "south_manitou_island_lighthouse",
+    "description": "South Manitou Island Lighthouse is located on South Manitou Island in Lake Michigan, 16 miles (26 km) west of Leland, Michigan. It is in Leelanau County in western Northern Michigan.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Southmanitoulighthouse.jpg/800px-Southmanitoulighthouse.jpg",
+    "location": "South Manitou Island, Michigan",
+    "coordinatesDms": "45.00768167°N 86.0937833°W",
+    "deactivatedYear": "1958",
+    "construction": "Brick and masonry, Italianate bracketing",
+    "marking": "white w/black trim and lantern",
+    "height": "65 feet (20 m)",
+    "heightM": 65,
+    "focalHeight": "104 feet (32 m)",
+    "focalHeightM": 104,
+    "lens": "Third order Fresnel lens",
+    "characteristic": ".mw-parser-output .tooltip-dotted{border-bottom:1px dotted;cursor:help}F W",
+    "firstLit": "1840",
+    "foundation": "Oak pilings, cut limestone",
+    "shape": "Conical",
+    "siteArea": "47 acres (19 ha)",
+    "siteAreaHa": 19.02,
+    "nrhpRefnum": "83003782",
+    "nrhpAddedDate": "October 28, 1983",
+    "mshsDesignationDate": "September 21, 1976",
+    "heritage": [
+      "National Register of Historic Places listed place",
+      "Michigan state historic site"
+    ]
   },
   {
     "latitude": 42.7163366,
@@ -145,7 +317,9 @@
     "name": "Peche Island Lighthouse Tower",
     "wikipedia": "en:Peche Island Rear Range Light",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "peche_island_lighthouse_tower",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)"
   },
   {
     "latitude": 43.0062811,
@@ -158,7 +332,33 @@
     "wikipedia": "en:Fort Gratiot Light",
     "building": "yes",
     "start_date": "1829",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "fort_gratiot_light",
+    "description": "Fort Gratiot Light , the first lighthouse in the state of Michigan, was constructed north of Fort Gratiot in 1825 by Lucius Lyon, who later became one of Michigan's first U.S. Senators.\nThe Fort Gratiot Light marks the entrance to the St. Clair River from Lake Huron (going south) in the southern portion of Michigan's Thumb. The light is still active and the grounds are an active Coast Guard facility, but it has recently been handed over to the Port Huron Museum. It is the oldest surviving lighthouse in Michigan. There is also a public beach and park on the property, known as Lighthouse Beach.\nIt is across the river from Point Edward Front Range Light.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Fort_Gratiot_Lighthouse_%282%29.jpg/960px-Fort_Gratiot_Lighthouse_%282%29.jpg",
+    "location": "Omar and Garfield Sts., Port Huron, Michigan",
+    "coordinatesDms": "43.006306°N 82.422472°W",
+    "construction": "Brick",
+    "marking": "White",
+    "height": "85 feet (26 m)",
+    "heightM": 85,
+    "focalHeight": "82 feet (25 m)",
+    "focalHeightM": 82,
+    "range": "18 nautical miles (33 km; 21 mi)",
+    "rangeKm": 18,
+    "lens": "Fourth-order Fresnel lens (original), DCB-224 Carlisle & Finch Aerobeacon (current)",
+    "characteristic": "Fl green 6 seconds",
+    "firstLit": "1825",
+    "foundation": "Dressed stone and timber",
+    "shape": "Frustum of a cone attached to workroom",
+    "architect": "Lyon, Lucius; Moors, J.",
+    "siteArea": "less than one acre",
+    "nrhpRefnum": "76001975",
+    "nrhpAddedDate": "July 30, 1976",
+    "heritage": [
+      "National Register of Historic Places listed place",
+      "Michigan state historic site"
+    ]
   },
   {
     "latitude": 45.7427144,
@@ -167,14 +367,42 @@
     "alt_name": "Saint James Lighthouse",
     "wikipedia": "en:Beaver Island Harbor Light",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "beaver_island_harbor_lighthouse",
+    "description": "The Holland Harbor Light, known as Big Red, is located in Park Township, Michigan at the entrance of a channel connecting Lake Michigan with Lake Macatawa, and which gives access to the city of Holland, Michigan.\nThe lighthouse is on the south side of the channel. There are two modern lights marking the ends of the breakwaters that extend out into the Lake Michigan beyond the lighthouse.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Holland_Harbor_Lighthouse.jpg/960px-Holland_Harbor_Lighthouse.jpg",
+    "location": "Ottawa County, Michigan",
+    "coordinatesDms": "42.772694°N 86.212417°W",
+    "construction": "Wood",
+    "marking": "red",
+    "height": "42 feet (13 m)",
+    "heightM": 42,
+    "focalHeight": "15 m (49 ft)",
+    "focalHeightM": 4.57,
+    "range": "16 nmi (30 km; 18 mi) (white), 14 nmi (26 km; 16 mi) (red)",
+    "rangeKm": 29.63,
+    "lens": "Sixth order Fresnel lens (removed)",
+    "characteristic": "Alt WR 10s",
+    "firstLit": "1872",
+    "foundation": "Pier",
+    "shape": "Square",
+    "nearestCity": "Holland, Michigan",
+    "siteArea": "less than one acre",
+    "nrhpRefnum": "78001509",
+    "nrhpAddedDate": "July 20, 1978",
+    "mshsDesignationDate": "January 16, 1976",
+    "heritage": [
+      "National Register of Historic Places listed place",
+      "Michigan state historic site"
+    ]
   },
   {
     "latitude": 45.3801944,
     "longitude": -84.961561,
     "name": "Petoskey Bayfront Light Beacon Station",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "petoskey_bayfront_light_beacon_station"
   },
   {
     "latitude": 46.5466221,
@@ -187,7 +415,10 @@
     "historic": "lighthouse",
     "building": "yes",
     "start_date": "1866",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "marquette_harbor_lighthouse",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)",
+    "wikipedia": "en:List of lighthouses in Michigan"
   },
   {
     "latitude": 45.03723,
@@ -195,7 +426,32 @@
     "name": "Thunder Bay Island Light",
     "wikipedia": "en:Thunder Bay Island Light",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "thunder_bay_island_light",
+    "description": "Thunder Bay Island Light, located on Thunder Bay Island's southeast tip, is one of the oldest operating lighthouses in Michigan.  The third operating U.S. lighthouse in Lake Huron was built here in 1831, but it disintegrated almost at once and was rebuilt in 1832 of local limestone.  This 40-foot (12 m) 1830s light tower was raised 10 feet (3.0 m)) to a height of 50 feet (15 m) in 1857, and sheathed with brick.  A fourth order Fresnel lens was installed.   This 1857 light tower is the current Thunder Bay Island Light, although the tower has been further altered and is currently 63 feet (19 m) high.\nA fog bell was installed in 1858, and the lightkeeper's house was rebuilt in 1868.  A steam-powered fog horn was added in 1871, and a fog signal building sheltering the fog signal apparatus was constructed in 1892.\nThe lighthouse was staffed during the seasons of Great Lakes navigation from 1832 until the staff was replaced by automation in 1983, more than 150 years later.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/58/Thunderbayisland.jpg",
+    "location": "Alpena County, Michigan",
+    "coordinatesDms": "45.04167°N 83.20000°W",
+    "construction": "Limestone",
+    "marking": "White with red lantern",
+    "height": "63 feet (19 m)",
+    "heightM": 63,
+    "focalHeight": "63 feet (19 m)",
+    "focalHeightM": 63,
+    "range": "16",
+    "lens": "Fourth-order Fresnel lens",
+    "characteristic": "FI G 10s",
+    "firstLit": "1857",
+    "foundation": "Dressed stone and timber",
+    "shape": "Frustum of a cone with attached keeper's residence",
+    "nearestCity": "Alpena, Michigan",
+    "siteArea": "2 acres (0.81 ha)",
+    "siteAreaHa": 0.81,
+    "nrhpRefnum": "84001371",
+    "nrhpAddedDate": "July 19, 1984",
+    "heritage": [
+      "National Register of Historic Places listed place"
+    ]
   },
   {
     "latitude": 46.7207849,
@@ -204,7 +460,10 @@
     "website": "https://www.lighthousefriends.com/light.asp?ID=727",
     "historic": "yes",
     "building": "house",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "granite_island_lighthouse",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)",
+    "wikipedia": "en:List of lighthouses in Michigan"
   },
   {
     "latitude": 45.6561944,
@@ -212,7 +471,26 @@
     "name": "Cheboygan Crib Light",
     "wikipedia": "en:Cheboygan Crib Light",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "cheboygan_crib_light",
+    "description": "The Cheboygan Crib Light is a light that marks the west pier head of the mouth of the Cheboygan River into Lake Huron. The pier head, in the center of the municipality of Cheboygan, is located at the north or lake end of Huron Street, and is one of the centerpieces of Cheboygan's Gordon Turner Park.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/d/de/CheboyganCrib.jpg",
+    "location": "Cheboygan, Michigan",
+    "coordinatesDms": "45.656800°N 84.465000°W",
+    "deactivatedYear": "1984",
+    "construction": "cast iron",
+    "marking": "White tower with red lantern and trim",
+    "height": "25 feet (7.6 m)",
+    "heightM": 25,
+    "focalHeight": "35 feet (11 m)",
+    "focalHeightM": 35,
+    "range": "10 nautical miles (19 km; 12 mi)",
+    "rangeKm": 10,
+    "lens": "Fourth-order Fresnel lens",
+    "characteristic": "Fl Red, 4 seconds",
+    "firstLit": "1884",
+    "foundation": "oak ring",
+    "shape": "Octagonal and frustum of a cone"
   },
   {
     "latitude": 47.4742622,
@@ -222,7 +500,11 @@
     "website": "https://www.lighthousefriends.com/light.asp?ID=226",
     "heritage_website": "https://npgallery.nps.gov/AssetDetail/NRIS/12000305",
     "historic": "heritage",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "copper_harbor_lighthouse",
+    "description": "Copper Harbor is an unincorporated community and census-designated place (CDP) located in Keweenaw County in the U.S. state of Michigan. It is located within Grant Township. The population of the CDP was 136 as of the 2020 census.\nThe community is located at the northern tip of the Keweenaw Peninsula and is the northernmost permanently populated community in the state. Due to its natural environment and surroundings, which include Fort Wilkins Historic State Park, Copper Harbor is marketed as an all-season tourist destination.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Copper_Harbor%2C_MI_location.png/960px-Copper_Harbor%2C_MI_location.png",
+    "wikipedia": "en:Copper Harbor, Michigan"
   },
   {
     "latitude": 45.913175,
@@ -230,14 +512,43 @@
     "name": "Martin Reef Lighthouse",
     "website": "https://www.lighthousefriends.com/light.asp?ID=717",
     "wikipedia": "en:Martin Reef Light Station",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "martin_reef_lighthouse",
+    "description": "Lighthouse Reef is an atoll in the Caribbean Sea, the easternmost part of the Belize Barrier Reef and one of its three atolls, the other two being Turneffe Atoll and Glover's Reef. Lighthouse Reef is located about 80 kilometres (50 mi) southeast of Belize City. The atoll is of oblong shape, approximately 35 kilometres (22 mi) long from north to south, and about 8 kilometres (5.0 mi) wide. It forms a shallow sandy lagoon with an area of 120 square kilometres (46 sq mi) and a depth between 2 and 6 metres (6 ft 7 in and 19 ft 8 in) deep.\nThe reef is one of the best developed and healthiest reefs in the Caribbean, \"with an emergent fringing reef, a sloping fore reef with a coral rimmed shelf edge, vertical coral walls, and numerous patch reefs in the shallow central lagoon.\"\nThere are several islands, listed here from north to south:\n\nSandbore Caye\nNorthern Caye\nHalf Moon Caye\nSaddle Caye\nLong Caye\nHat Caye\nLighthouse Reef is known as a snorkelling and diving destination, considered one of the best dive sites in Belize and the whole Caribbean. Notable diving locations are Half Moon Caye Wall, Long Caye Aquarium (\"The Aquarium\"), Silver Caves, Tres Cocos, and West Point. In addition to these coral reefs, it is also home to the Great Blue Hole.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Lighthouse_Reef_Belize.jpg/960px-Lighthouse_Reef_Belize.jpg"
   },
   {
     "latitude": 43.6354188,
     "longitude": -83.8505138,
     "name": "Saginaw River Rear Range Light",
     "wikipedia": "en:Saginaw River Rear Range Light",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "saginaw_river_rear_range_light",
+    "description": "The first Saginaw River lighthouse was constructed from 1839 to 1841, in a period when large quantities of lumber were being harvested and shipped from the heart of Michigan via river and the Great Lakes to the East Coast of the United States via the Erie Canal and Hudson River. This connection to major eastern markets was critical to the development of central Michigan.\nIn 1867 the United States Corps of Engineers dredged the Saginaw River to enable passage by larger ships upriver. This change required replacing the first light, and in 1876 a pair of lighthouses were constructed in range light configuration to provide improved navigation. The front one was located on the west bank of the river and the rear range lighthouse was located south of the river mouth. It contained living quarters. In 1915, the two lighthouses were converted to electricity.\nClosed since the 1970s, the rear range lighthouse was listed in 1984 on the National Register of Historic Places.  Dow Chemical Company, which owned the surrounding property, purchased the lighthouse and site in 1986 and boarded it up. Since the turn of the 21st century, the lighthouse and site are being renovated by the Saginaw River Marine Historical Society for heritage tourism.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/SaginawRiverLight.jpg/960px-SaginawRiverLight.jpg",
+    "location": "Coast Guard St., Bay City, Michigan",
+    "coordinatesDms": "43.635500°N 83.85056°W",
+    "deactivatedYear": "1960",
+    "construction": "Cream City Brick covered with concrete",
+    "marking": "white/black trim",
+    "height": "59 feet (18 m)",
+    "heightM": 59,
+    "focalHeight": "77 feet (23 m)",
+    "focalHeightM": 77,
+    "range": "8.5 nautical miles (15.7 km; 9.8 mi)",
+    "rangeKm": 8.5,
+    "lens": "4th order Fresnel lens",
+    "firstLit": "1876",
+    "foundation": "Timber piles/concrete/steel sheeting",
+    "shape": "Square tapered",
+    "architect": "Major Godfrey Weitzel",
+    "siteArea": "1 acre (0.40 ha)",
+    "siteAreaHa": 0.4,
+    "nrhpRefnum": "84001373",
+    "nrhpAddedDate": "July 19, 1984",
+    "heritage": [
+      "National Register of Historic Places listed place"
+    ]
   },
   {
     "latitude": 45.8105246,
@@ -245,7 +556,15 @@
     "name": "Bois Blanc Island Lighthouse",
     "website": "https://www.lighthousefriends.com/light.asp?ID=718",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "bois_blanc_island_lighthouse",
+    "description": "Bois Blanc Island ( boyz BLANK) is an island in Lake Huron within Bois Blanc Township, Mackinac County, Michigan. The island covers about 34 sq mi (88 km2) and is about 12 miles (19 km) long, 6 miles (9.6 km) wide and has 6 lakes. It lies southeast of Mackinac Island and almost due north of the city of Cheboygan.\n\"Bois Blanc\" is French for \"white wood\". The name is commonly thought to be a reference to either: (a) the paper birch, or more likely (b) the basswood, called \"bois blanc\" in other contexts. The basswood's white underbark was extensively used by Native Americans and French-speaking fur traders for cordage, including the sewing up of canoes and the manufacture of webbing for snowshoes. The French Canadian colloquial term for \"inner bark\" was bois blanc. The Native Americans themselves have a name for Bois Blanc Island and the meaning is the same as the Canadian name. It is called Wigobiminiss. Wigobi or wicopy signifies \"tying bark\" or \"inner bark\". Miniss means \"island\".\n\"Boblo\" is an English corruption of the French pronunciation of the name. Several islands with the same name dot the Great Lakes, and nearly all are known as \"Boblo\" or \"Bob-lo\" by the local populations.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Straits_of_Mackinac_crx.jpg",
+    "wikipedia": "en:Bois Blanc Island (Michigan)",
+    "location": "Lake Huron near the Straits of Mackinac",
+    "coordinatesDms": "45.77500°N 84.47889°W",
+    "siteArea": "34 sq mi (88 km2)",
+    "siteAreaHa": 3400
   },
   {
     "latitude": 45.2102865,
@@ -253,7 +572,10 @@
     "name": "Grand Traverse Lighthouse",
     "historic": "yes",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "grand_traverse_lighthouse",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)",
+    "wikipedia": "en:List of lighthouses in Michigan"
   },
   {
     "latitude": 45.3379225,
@@ -261,7 +583,10 @@
     "name": "Presque Isle Rear Range Lighthouse",
     "address_state": "MI",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "presque_isle_rear_range_lighthouse",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)",
+    "wikipedia": "en:List of lighthouses in Michigan"
   },
   {
     "latitude": 45.3420456,
@@ -269,7 +594,10 @@
     "name": "Old Presque Isle Light",
     "wikipedia": "en:Old Presque Isle Light",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "old_presque_isle_light",
+    "description": "Presque Isle Township is a civil township of Presque Isle County in the U.S. state of Michigan.  The population was 1,698 at the 2020 census.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/PresqueIsle_LightStation_1.2k.jpg/960px-PresqueIsle_LightStation_1.2k.jpg"
   },
   {
     "latitude": 44.0228565,
@@ -282,7 +610,30 @@
     "wikipedia": "en:Pointe aux Barques Light",
     "building": "yes",
     "start_date": "1857",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "pointe_aux_barques_lighthouse",
+    "description": "Pointe aux Barques ( point-ə-BARKS) Lighthouse and Maritime Museum is an active lighthouse and adjoining museum located in Huron County in the U.S. state of Michigan. It is located along the shores of Lake Huron on the northeastern tip of the Thumb. The current structure, built in 1857, is one of the oldest active lighthouses in the state and the site now serves as an interpretive center for the lighthouse, the nearby United States Life-Saving Service station, and local maritime history. The name is translated as \"point of little boats\" from the French language, which refers to the shallow coastline that poses a threat to larger boats.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Pointe_aux_Barques_Lighthouse.jpg/960px-Pointe_aux_Barques_Lighthouse.jpg",
+    "location": "Port Hope, Michigan",
+    "coordinatesDms": "44.02333°N 82.79333°W",
+    "construction": "Milwaukee Cream City brick",
+    "marking": "White with black and red trim",
+    "height": "89 feet (27 m)",
+    "heightM": 89,
+    "focalHeight": "93 feet (28 m)",
+    "focalHeightM": 93,
+    "range": "28 nautical miles (52 km; 32 mi)",
+    "rangeKm": 28,
+    "lens": "Lewis Patent Lamp with reflector and lens (1848–1873); Third order Fresnel lens with bullseyes (1873–1969)",
+    "characteristic": "0.2s fl 4.8s ec. 0.2s fl 14.8s ec.",
+    "firstLit": "1848 (original light); 1857 (current light)",
+    "foundation": "Dressed stone and timber",
+    "shape": "Conical",
+    "nrhpRefnum": "73000949",
+    "nrhpAddedDate": "March 20, 1973",
+    "heritage": [
+      "National Register of Historic Places listed place"
+    ]
   },
   {
     "latitude": 46.7711567,
@@ -295,7 +646,11 @@
     "wikipedia": "en:Whitefish Point Light",
     "building": "yes",
     "start_date": "1861",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "whitefish_point_lighthouse",
+    "description": "Whitefish Point is a cape of Michigan's Upper Peninsula, United States, marking the entry point of Whitefish Bay. It is 11 miles (18 km) north of the unincorporated community of Paradise, Michigan.\nWhitefish Point is known for the Great Lakes Shipwreck Museum, its Lake Superior shoreline, the Whitefish Point Lighthouse and as a prime birding area.  Whitefish Point is a designated Important Bird Area. The Whitefish Point Bird Observatory, an affiliate of the Michigan Audubon Society, operates a research and education facility at Whitefish Point.\nAt 17 miles away, Whitefish Point is the nearest navigation mark to the wreckage of the ore freighter SS Edmund Fitzgerald, which sank in 1975. Whitefish Point remains one of the most dangerous shipping areas in the Great Lakes, Known as the graveyard of the Great Lakes, more vessels have been lost in the Whitefish Point area than any other part of Lake Superior.\nThe Whitefish Point Underwater Preserve protects the shipwrecks in a portion of the bay for future generations of sports divers.\nThe Point is a popular place for rock collectors, ship watchers, and bird watching.  Whitefish Point's land and water provides a natural corridor for birds that makes it a migratory route of world significance.  It is a designated Important Bird Area where the Whitefish Point Bird Observatory conducts important research.\nWhitefish Point is the home of a former United States Coast Guard station.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Lake_Superior_-_Whitefish_Point_%2815437961566%29.jpg/960px-Lake_Superior_-_Whitefish_Point_%2815437961566%29.jpg",
+    "location": "Whitefish Township, Michigan"
   },
   {
     "latitude": 47.8664303,
@@ -309,7 +664,9 @@
     "wikipedia": "en:Rock of Ages Light",
     "building": "yes",
     "start_date": "1910",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "rock_of_ages_lighthouse",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)"
   },
   {
     "latitude": 47.9478594,
@@ -324,7 +681,29 @@
     "wikipedia": "en:Isle Royale Light",
     "building": "lighthouse",
     "start_date": "1875",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "isle_royale_light",
+    "description": "The Isle Royale Light, or Menagerie Island Light, is a lighthouse within Isle Royale National Park, in Keweenaw County, northern Michigan, United States.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Isle_Royale_Light.JPG/960px-Isle_Royale_Light.JPG",
+    "location": "Menagerie Island, Houghton Township, Keweenaw County, Michigan",
+    "coordinatesDms": "47.9479000°N 88.7612000°W",
+    "construction": "Red Sandstone",
+    "height": "height - 61 feet (19 m)",
+    "heightM": 61,
+    "focalHeight": "74 feet (23 m)",
+    "focalHeightM": 74,
+    "range": "8.7 nautical miles; 16 kilometres (10 mi)",
+    "lens": "Fourth order Fresnel Lens (original), 12-inch (300 mm) Tideland Signal Acrylic optic (ML-300) (current)",
+    "characteristic": "Fl W 6s",
+    "firstLit": "1875",
+    "foundation": "Rock",
+    "shape": "Octagonal",
+    "nearestCity": "Isle Royale, Michigan",
+    "nrhpRefnum": "83000880",
+    "nrhpAddedDate": "August 04, 1983",
+    "heritage": [
+      "National Register of Historic Places listed place"
+    ]
   },
   {
     "latitude": 46.8733684,
@@ -337,7 +716,9 @@
     "wikipedia": "en:Ontonagon Light",
     "building": "yes",
     "start_date": "1884",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "ontonagon_lighthouse",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)"
   },
   {
     "latitude": 45.0210343,
@@ -350,7 +731,31 @@
     "building": "yes",
     "start_date": "1934",
     "description": "Rising from the center of the station building is a square, three-story tower. The tower's first two stories are 13 feet square, while the third story is 12.5 feet square.",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "north_manitou_shoal_light_station",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/f/fa/North_Manitou_Shoal_Light_Station_%28Leelanau_County%2C_Michigan%29.jpg",
+    "location": "Southeast of North Manitou Island in Leland Township, Michigan",
+    "coordinatesDms": "45.02000°N 85.95667°W",
+    "construction": "Steel",
+    "marking": "White",
+    "height": "63 feet (19 m)",
+    "heightM": 63,
+    "focalHeight": "79 feet (24 m)",
+    "focalHeightM": 79,
+    "range": "12 nmi (22 km; 14 mi)",
+    "rangeKm": 22.22,
+    "lens": "Westinghouse Airway Beacon (original), DCB-24 (current)",
+    "characteristic": ".mw-parser-output .tooltip-dotted{border-bottom:1px dotted;cursor:help}Fl R 15s",
+    "firstLit": "1935",
+    "foundation": "Concrete crib",
+    "shape": "Square on square house",
+    "nearestCity": "Leland Township, Michigan",
+    "siteArea": "less than one acre",
+    "nrhpRefnum": "05000981",
+    "nrhpAddedDate": "September 6, 2005",
+    "heritage": [
+      "National Register of Historic Places listed place"
+    ]
   },
   {
     "latitude": 42.401386,
@@ -359,7 +764,22 @@
     "operator": "U.S. Coast Guard",
     "wikipedia": "en:South Haven Light",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "south_haven_south_pierhead_light",
+    "description": "Grand Haven South Pierhead Inner Light is the inner light of two lighthouses on the south pier of Grand Haven, Michigan where the Grand River enters Lake Michigan. A lighthouse was first lit there in 1839. The lighthouse was put up for sale in 2009 under the National Historic Lighthouse Preservation Act. The City of Grand Haven now owns the pier, but it is maintained by the Army Corps of Engineers.\n\n",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/5f/GrandHavenPierLight.jpg",
+    "location": "Grand Haven, Michigan",
+    "coordinatesDms": "43.057250°N 86.253806°W",
+    "marking": "red",
+    "height": "51 feet (16 m)",
+    "heightM": 51,
+    "focalHeight": "16 m (52 ft)",
+    "focalHeightM": 4.88,
+    "range": "3 nautical miles (5.6 km; 3.5 mi)",
+    "rangeKm": 3,
+    "lens": "9.8 inches (250 mm)",
+    "characteristic": ".mw-parser-output .tooltip-dotted{border-bottom:1px dotted;cursor:help}Oc R 4s",
+    "firstLit": "1907"
   },
   {
     "latitude": 42.1161476,
@@ -370,7 +790,31 @@
     "historic": "lighthouse",
     "building": "yes",
     "start_date": "1907",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "st_joseph_north_pier_lighthouse",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)",
+    "wikipedia": "en:List of lighthouses in Michigan",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/St_Joseph_North_Pier_Lights.jpg/960px-St_Joseph_North_Pier_Lights.jpg",
+    "location": "St. Joseph, United States",
+    "coordinatesDms": "42.12°N 86.49°W",
+    "firstLit": "1906",
+    "construction": "Cast iron",
+    "foundation": "Pier",
+    "marking": "Black/white",
+    "shape": "Cylindrical",
+    "height": "35 feet (11 m)",
+    "heightM": 35,
+    "focalHeight": "31 feet (9.4 m)",
+    "focalHeightM": 31,
+    "range": "12 nautical miles (22 km; 14 mi)",
+    "rangeKm": 12,
+    "lens": "Fifth order Fresnel lens",
+    "characteristic": "Fl W 2.5s",
+    "nrhpRefnum": "05001211",
+    "nrhpAddedDate": "November 9, 2005",
+    "heritage": [
+      "National Register of Historic Places contributing property"
+    ]
   },
   {
     "latitude": 42.1163669,
@@ -382,7 +826,32 @@
     "historic": "lighthouse",
     "building": "yes",
     "start_date": "1906",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "north_pierhead_light",
+    "description": "The Milwaukee Pierhead Light is an active lighthouse located in the Milwaukee harbor, just south of downtown. This aid to navigation is a 'sister' of the Kenosha North Pier Light.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/0/0c/MilwaukeePierhead.jpg",
+    "wikipedia": "en:Milwaukee Pierhead Light",
+    "location": "Milwaukee, Wisconsin",
+    "coordinatesDms": "43.02593833°N 87.89526056°W",
+    "construction": "Steel",
+    "marking": "Red with black lantern and parapet",
+    "height": "41 feet (12 m)",
+    "heightM": 41,
+    "focalHeight": "43 feet (13 m)",
+    "focalHeightM": 43,
+    "range": "7 nautical miles (13 km; 8.1 mi)",
+    "rangeKm": 7,
+    "lens": "Fourth-order Fresnel lens (original), unknown \"modern beacon\" (current)",
+    "characteristic": "Red flashing light every 4 seconds",
+    "firstLit": "1872",
+    "foundation": "concrete pier",
+    "shape": "Frustum of a cone, decagonal lantern room",
+    "siteArea": "less than one acre",
+    "nrhpRefnum": "12000971",
+    "nrhpAddedDate": "November 2012",
+    "heritage": [
+      "National Register of Historic Places listed place"
+    ]
   },
   {
     "latitude": 44.6308789,
@@ -395,7 +864,33 @@
     "wikipedia": "en:Frankfort Light",
     "building": "yes",
     "start_date": "1912",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "frankfort_north_breakwater_light",
+    "description": "The Frankfort Light is a lighthouse located on the north breakwater in the harbor in Frankfort, Michigan. The current light was constructed in 1912 and placed on the National Register of Historic Places in 2005.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/58/LightningVolt_Frankfort_Lighthouse.jpg",
+    "location": "Frankfort, Michigan",
+    "coordinatesDms": "44.6306°N 86.2522°W",
+    "construction": "Steel clad frame",
+    "marking": "White with Black markings, Parapet and Lantern",
+    "height": "67 feet (20 m)",
+    "heightM": 67,
+    "focalHeight": "72 feet (22 m)",
+    "focalHeightM": 72,
+    "range": "16 nautical miles (30 km; 18 mi)",
+    "rangeKm": 16,
+    "lens": "5th order Fresnel lens (original), 4th order Fresnel lens (current)",
+    "characteristic": ".mw-parser-output .tooltip-dotted{border-bottom:1px dotted;cursor:help}F W",
+    "firstLit": "1873",
+    "foundation": "Two-story metal over breakwater",
+    "shape": "Pyramidal tower",
+    "nearestCity": "Frankfort, Michigan",
+    "architect": "Bureau of Lighthouses, 9th District",
+    "siteArea": "less than one acre",
+    "nrhpRefnum": "05000983",
+    "nrhpAddedDate": "September 6, 2005",
+    "heritage": [
+      "National Register of Historic Places listed place"
+    ]
   },
   {
     "latitude": 45.320267,
@@ -408,7 +903,9 @@
     "wikipedia": "en:Charlevoix South Pier Light Station",
     "building": "yes",
     "start_date": "1948",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "charlevoix_south_pier_light",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)"
   },
   {
     "latitude": 47.4676161,
@@ -417,7 +914,11 @@
     "website": "https://www.lighthousefriends.com/light.asp?ID=225",
     "operator": "Michigan Historical Museum System",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "copper_harbor_rear_range_lights",
+    "description": "Copper Harbor is an unincorporated community and census-designated place (CDP) located in Keweenaw County in the U.S. state of Michigan. It is located within Grant Township. The population of the CDP was 136 as of the 2020 census.\nThe community is located at the northern tip of the Keweenaw Peninsula and is the northernmost permanently populated community in the state. Due to its natural environment and surroundings, which include Fort Wilkins Historic State Park, Copper Harbor is marketed as an all-season tourist destination.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Copper_Harbor%2C_MI_location.png/960px-Copper_Harbor%2C_MI_location.png",
+    "wikipedia": "en:Copper Harbor, Michigan"
   },
   {
     "latitude": 47.3740165,
@@ -426,7 +927,30 @@
     "website": "https://www.lighthousefriends.com/light.asp?ID=227",
     "wikipedia": "en:Mendota (Bete Grise) Light",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "bete_grise_mendota_lighthouse",
+    "description": "The Mendota Light,  also known as the Bete Grise light, was built on the Keweenaw Peninsula of Michigan to facilitate travel between Lake Superior and Lac La Belle (an artificial canal having been made to connect the two).",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Mendota_Lighthouse_Michigan.jpg/960px-Mendota_Lighthouse_Michigan.jpg",
+    "location": "Mendota, Michigan",
+    "coordinatesDms": "47.37417°N 87.96667°W",
+    "deactivatedYear": "1956",
+    "construction": "Brick",
+    "marking": "Yellow with black lantern",
+    "height": "42 feet (13 m)",
+    "heightM": 42,
+    "focalHeight": "44 feet (13 m)",
+    "focalHeightM": 44,
+    "range": "14 nmi (26 km; 16 mi)",
+    "rangeKm": 25.93,
+    "lens": "4th Order Fresnel Lens",
+    "characteristic": "Flash W 20 secs.",
+    "firstLit": "1895, 1998",
+    "shape": "Square, attached T-shaped bldg. w/steep gable roof.",
+    "nrhpRefnum": "80004840",
+    "nrhpAddedDate": "August 29, 1980",
+    "heritage": [
+      "National Register of Historic Places listed place"
+    ]
   },
   {
     "latitude": 44.2537303,
@@ -435,7 +959,10 @@
     "website": "https://www.michigan.gov/mhc/museums/tawas",
     "operator": "DNR",
     "building": "lighthouse",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "tawas_point_lighthouse",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)",
+    "wikipedia": "en:List of lighthouses in Michigan"
   },
   {
     "latitude": 45.6473639,
@@ -450,21 +977,30 @@
     "phone": "+1-231-436-5580",
     "website": "https://www.gllka.org/cheboygan-river-front-range-light",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "cheboygan_river_front_range_light",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)",
+    "wikipedia": "en:List of lighthouses in Michigan"
   },
   {
     "latitude": 45.9448711,
     "longitude": -86.2475531,
     "name": "Manistique East Breakwater Lighthouse",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "manistique_east_breakwater_lighthouse",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)",
+    "wikipedia": "en:List of lighthouses in Michigan"
   },
   {
     "latitude": 46.7529461,
     "longitude": -85.2574208,
     "name": "Crisp Point Lighthouse",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "crisp_point_lighthouse",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)",
+    "wikipedia": "en:List of lighthouses in Michigan"
   },
   {
     "latitude": 43.8457196,
@@ -477,14 +1013,19 @@
     "wikipedia": "en:Harbor Beach Light",
     "building": "yes",
     "start_date": "1885",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "harbor_beach_light",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)"
   },
   {
     "latitude": 47.4171281,
     "longitude": -87.6639032,
     "name": "Gull Rock Lighthouse",
     "building": "yes",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "gull_rock_lighthouse",
+    "description": "This is a list of all lighthouses in the U.S. state of Michigan as identified by the United States Coast Guard. Michigan is home to lights on four of the Great Lakes, Lake St. Clair and connecting waterways.\nThe first lighthouse in the state, Fort Gratiot Light, was erected in 1825. It is still active. The Michigan.gov website does not have a Map of Michigan Lighthouses in PDF format anymore.\nIf not otherwise noted, focal height and coordinates are taken from the United States Coast Guard Light List, while location and dates of activation, automation, and deactivation are taken from the United States Coast Guard Historical information site for lighthouses.\n(below, 129, Active, Inactive, Moved, Museum; 24, Destroyed)",
+    "wikipedia": "en:List of lighthouses in Michigan"
   },
   {
     "latitude": 44.0820701,
@@ -497,7 +1038,31 @@
     "historic": "lighthouse",
     "building": "yes",
     "start_date": "1899",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "port_austin_reef_light",
+    "description": "Port Austin Lighthouse (or Port Austin Reef Light) is a lighthouse off the shore of Lake Huron, about 2.5 miles (4.0 km) north of Port Austin, Huron County Michigan sitting on a rocky reef (shoal), which is just north of the tip of the Thumb and a real hazard to navigation.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Port_Austin_Reef.jpg/960px-Port_Austin_Reef.jpg",
+    "wikipedia": "en:Port Austin Light",
+    "location": "Port Austin Reef, 2.5 miles (4.0 km) north of Port Austin, Michigan (Port aux Barques Township)",
+    "coordinatesDms": "44.083°N 82.983°W",
+    "construction": "Brick",
+    "marking": "Buff square tower with attached house w/red roof.",
+    "height": "60 feet (18 m)",
+    "heightM": 60,
+    "focalHeight": "76 feet (23 m)",
+    "focalHeightM": 76,
+    "range": "8 nautical miles (15 km; 9.2 mi) Other sources claim 14.3 nautical miles; 26.6 kilometres (16.5 mi)",
+    "rangeKm": 8,
+    "lens": "Fourth order Fresnel lens (original), 12-inch (300 mm) Tideland Signal ML-300 acrylic (current)",
+    "characteristic": "White, every 6 seconds.",
+    "firstLit": "1878",
+    "foundation": "Brick, cement, crushed stone",
+    "shape": "Square",
+    "nrhpRefnum": "11000666",
+    "nrhpAddedDate": "September 15, 2011",
+    "heritage": [
+      "National Register of Historic Places listed place"
+    ]
   },
   {
     "latitude": 46.5741545,
@@ -510,7 +1075,34 @@
     "historic": "lighthouse",
     "building": "yes",
     "start_date": "1941",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "breakwater_light",
+    "description": "The Frankfort Light is a lighthouse located on the north breakwater in the harbor in Frankfort, Michigan. The current light was constructed in 1912 and placed on the National Register of Historic Places in 2005.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/58/LightningVolt_Frankfort_Lighthouse.jpg",
+    "wikipedia": "en:Frankfort Light",
+    "location": "Frankfort, Michigan",
+    "coordinatesDms": "44.6306°N 86.2522°W",
+    "construction": "Steel clad frame",
+    "marking": "White with Black markings, Parapet and Lantern",
+    "height": "67 feet (20 m)",
+    "heightM": 67,
+    "focalHeight": "72 feet (22 m)",
+    "focalHeightM": 72,
+    "range": "16 nautical miles (30 km; 18 mi)",
+    "rangeKm": 16,
+    "lens": "5th order Fresnel lens (original), 4th order Fresnel lens (current)",
+    "characteristic": ".mw-parser-output .tooltip-dotted{border-bottom:1px dotted;cursor:help}F W",
+    "firstLit": "1873",
+    "foundation": "Two-story metal over breakwater",
+    "shape": "Pyramidal tower",
+    "nearestCity": "Frankfort, Michigan",
+    "architect": "Bureau of Lighthouses, 9th District",
+    "siteArea": "less than one acre",
+    "nrhpRefnum": "05000983",
+    "nrhpAddedDate": "September 6, 2005",
+    "heritage": [
+      "National Register of Historic Places listed place"
+    ]
   },
   {
     "latitude": 46.9688535,
@@ -522,7 +1114,35 @@
     "historic": "lighthouse",
     "building": "yes",
     "start_date": "1920",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "keweenaw_lower_entrance_light",
+    "description": "The Copper Harbor Light is a lighthouse located in the harbor of Copper Harbor, Michigan USA on the Keweenaw Peninsula of Upper Michigan inside Fort Wilkins Historic State Park. It is a Michigan State Historic Site and listed on the National Register of Historic Places.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Copper_Harbor_Light_2022-08-16_01.jpg/960px-Copper_Harbor_Light_2022-08-16_01.jpg",
+    "wikipedia": "en:Copper Harbor Light",
+    "location": "9879 Woodland Rd. (Grant Township), Copper Harbor, Michigan",
+    "coordinatesDms": "47.474472°N 87.860250°W",
+    "construction": "brick",
+    "marking": "White skeleton tower w/black lantern",
+    "height": "Tower - 42 feet (13 m)",
+    "heightM": 42,
+    "focalHeight": "90 feet (27 m)",
+    "focalHeightM": 90,
+    "range": "21 nautical miles (39 km; 24 mi); 18 nautical miles (33 km; 21 mi) adjacent tower",
+    "rangeKm": 21,
+    "lens": "Fourth order Fresnel lens (original), 12-inch (300 mm) (current)",
+    "characteristic": "Fl Green, 6 sec",
+    "firstLit": "1872",
+    "foundation": "Pier",
+    "shape": "Square",
+    "nearestCity": "Holland, Michigan",
+    "siteArea": "less than one acre",
+    "nrhpRefnum": "78001509",
+    "nrhpAddedDate": "July 20, 1978",
+    "mshsDesignationDate": "January 16, 1976",
+    "heritage": [
+      "National Register of Historic Places listed place",
+      "Michigan state historic site"
+    ]
   },
   {
     "latitude": 45.0972812,
@@ -536,7 +1156,10 @@
     "wikipedia": "en:Menominee Pier Light",
     "building": "yes",
     "start_date": "1877",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "menominee_north_pier_lighthouse",
+    "description": "Menominee ( mə-NOM-ə-nee) is a city in and the county seat of Menominee County, Michigan in the Upper Peninsula.  The population was 8,488 at the 2020 census.  It is the county seat of Menominee County. Menominee is the fourth-largest city in the Upper Peninsula, behind Marquette, Sault Ste. Marie, and Escanaba. Menominee Township is located to the north of the city, but is politically autonomous.\nMenominee is part of the Marinette, WI–MI micropolitan statistical area.\n\n",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/2009-0619-Menominee-1StDist.jpg/960px-2009-0619-Menominee-1StDist.jpg"
   },
   {
     "latitude": 43.9536416,
@@ -550,6 +1173,32 @@
     "wikipedia": "en:Ludington Light",
     "building": "yes",
     "start_date": "1924",
-    "uniqueType": "lighthouse"
+    "uniqueType": "lighthouse",
+    "slug": "north_breakwater_light",
+    "description": "The Frankfort Light is a lighthouse located on the north breakwater in the harbor in Frankfort, Michigan. The current light was constructed in 1912 and placed on the National Register of Historic Places in 2005.",
+    "heroImage": "https://upload.wikimedia.org/wikipedia/commons/5/58/LightningVolt_Frankfort_Lighthouse.jpg",
+    "location": "Frankfort, Michigan",
+    "coordinatesDms": "44.6306°N 86.2522°W",
+    "construction": "Steel clad frame",
+    "marking": "White with Black markings, Parapet and Lantern",
+    "height": "67 feet (20 m)",
+    "heightM": 67,
+    "focalHeight": "72 feet (22 m)",
+    "focalHeightM": 72,
+    "range": "16 nautical miles (30 km; 18 mi)",
+    "rangeKm": 16,
+    "lens": "5th order Fresnel lens (original), 4th order Fresnel lens (current)",
+    "characteristic": ".mw-parser-output .tooltip-dotted{border-bottom:1px dotted;cursor:help}F W",
+    "firstLit": "1873",
+    "foundation": "Two-story metal over breakwater",
+    "shape": "Pyramidal tower",
+    "nearestCity": "Frankfort, Michigan",
+    "architect": "Bureau of Lighthouses, 9th District",
+    "siteArea": "less than one acre",
+    "nrhpRefnum": "05000983",
+    "nrhpAddedDate": "September 6, 2005",
+    "heritage": [
+      "National Register of Historic Places listed place"
+    ]
   }
 ]

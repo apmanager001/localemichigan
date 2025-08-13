@@ -1,0 +1,555 @@
+[
+  {
+    "latitude": -83.4922685,
+    "longitude": -83.4923288,
+    "name": "New Presque Isle Light",
+    "wikipedia": "en:New Presque Isle Light",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 45.8430065,
+    "longitude": -84.6156422,
+    "name": "Round Island Passage Lighthouse",
+    "historic": "yes",
+    "wikipedia": "en:Round Island Passage Light",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 46.6726545,
+    "longitude": -86.1394742,
+    "name": "Au Sable Point Lighthouse",
+    "website": "https://www.lighthousefriends.com/light.asp?ID=724",
+    "wikipedia": "en:Au Sable Light",
+    "building": "yes",
+    "building_levels": "2",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 42.3470332,
+    "longitude": -82.9542843,
+    "name": "William Livingstone Memorial Lighthouse",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 44.991212,
+    "longitude": -85.4793434,
+    "name": "Old Mission Point Lighthouse",
+    "wikipedia": "en:Mission Point Light",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 47.4596892,
+    "longitude": -88.1591864,
+    "name": "Eagle Harbor Light",
+    "website": "https://www.lighthousefriends.com/light.asp?ID=224",
+    "heritage_website": "https://npgallery.nps.gov/AssetDetail/NRIS/84001745",
+    "historic": "heritage",
+    "wikipedia": "en:Eagle Harbor Light",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 47.3918858,
+    "longitude": -88.3704575,
+    "name": "Sand Hills Lighthouse",
+    "website": "https://www.lighthousefriends.com/light.asp?ID=222",
+    "heritage_website": "https://npgallery.nps.gov/AssetDetail/NRIS/94000746",
+    "historic": "heritage",
+    "wikipedia": "en:Sand Hills Light",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 42.7727218,
+    "longitude": -86.2124923,
+    "name": "Holland Harbor Light",
+    "wikipedia": "en:Holland Harbor Light",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 44.6913092,
+    "longitude": -86.2552893,
+    "name": "Pointe Betsie Lighthouse",
+    "protection_title": "Benzie County, Michigan",
+    "website": "https://pointbetsie.org/",
+    "heritage_website": "https://www.nps.gov/subjects/nationalregister/index.htm",
+    "historic": "lighthouse",
+    "building": "yes",
+    "start_date": "1858",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 45.7447215,
+    "longitude": -87.0443888,
+    "name": "Sand Point Lighthouse",
+    "wikipedia": "en:Sand Point Light",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 44.7127234,
+    "longitude": -83.2728999,
+    "name": "Sturgeon Point Light",
+    "alt_name": "Sturgeon Point Lighthouse",
+    "building": "lighthouse",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 41.8012567,
+    "longitude": -86.7483649,
+    "name": "New Buffalo Lighthouse",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 44.2539226,
+    "longitude": -83.4495105,
+    "name": "Tawas Point Lighthouse",
+    "website": "https://www.michigan.gov/mhc/museums/tawas",
+    "operator": "DNR",
+    "building": "lighthouse",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 45.4862409,
+    "longitude": -83.9137655,
+    "name": "Forty Mile Point Light",
+    "address_city": "Rogers City",
+    "address_zipcode": "49779",
+    "address_state": "MI",
+    "address_number": "7323",
+    "address_street": "US-23 North",
+    "website": "https://fortymilepointlighthouse.org",
+    "historic": "yes",
+    "wikipedia": "en:Forty Mile Point Light",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 45.00759,
+    "longitude": -86.0938632,
+    "name": "South Manitou Island Lighthouse",
+    "protection_title": "Sleeping Bear Dunes National Lakeshore",
+    "heritage_website": "https://www.nps.gov/subjects/nationalregister/index.htm",
+    "historic": "maritime",
+    "wikipedia": "en:South Manitou Island Lighthouse",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 42.7163366,
+    "longitude": -82.4914925,
+    "name": "Peche Island Lighthouse Tower",
+    "wikipedia": "en:Peche Island Rear Range Light",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 43.0062811,
+    "longitude": -82.4224045,
+    "name": "Fort Gratiot Light",
+    "protection_title": "St. Claire County Parks",
+    "heritage_website": "https://www.nps.gov/subjects/nationalregister/index.htm",
+    "operator": "U.S. Coast Guard",
+    "historic": "lighthouse",
+    "wikipedia": "en:Fort Gratiot Light",
+    "building": "yes",
+    "start_date": "1829",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 45.7427144,
+    "longitude": -85.5087896,
+    "name": "Beaver Island Harbor Lighthouse",
+    "alt_name": "Saint James Lighthouse",
+    "wikipedia": "en:Beaver Island Harbor Light",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 45.3801944,
+    "longitude": -84.961561,
+    "name": "Petoskey Bayfront Light Beacon Station",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 46.5466221,
+    "longitude": -87.37634,
+    "name": "Marquette Harbor Lighthouse",
+    "protection_title": "U.S. Coast Guard",
+    "website": "https://mqtmaritimemuseum.com/marquette-lighthouse",
+    "heritage_website": "https://www.nps.gov/subjects/nationalregister/index.htm",
+    "operator": "U.S. Coast Guard",
+    "historic": "lighthouse",
+    "building": "yes",
+    "start_date": "1866",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 45.03723,
+    "longitude": -83.1943289,
+    "name": "Thunder Bay Island Light",
+    "wikipedia": "en:Thunder Bay Island Light",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 46.7207849,
+    "longitude": -87.4120583,
+    "name": "Granite Island Lighthouse",
+    "website": "https://www.lighthousefriends.com/light.asp?ID=727",
+    "historic": "yes",
+    "building": "house",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 45.6561944,
+    "longitude": -84.4655226,
+    "name": "Cheboygan Crib Light",
+    "wikipedia": "en:Cheboygan Crib Light",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 47.4742622,
+    "longitude": -87.860145,
+    "name": "Copper Harbor Lighthouse",
+    "alt_name": "Harbor Lighthouse",
+    "website": "https://www.lighthousefriends.com/light.asp?ID=226",
+    "heritage_website": "https://npgallery.nps.gov/AssetDetail/NRIS/12000305",
+    "historic": "heritage",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 45.913175,
+    "longitude": -84.1487756,
+    "name": "Martin Reef Lighthouse",
+    "website": "https://www.lighthousefriends.com/light.asp?ID=717",
+    "wikipedia": "en:Martin Reef Light Station",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 43.6354188,
+    "longitude": -83.8505138,
+    "name": "Saginaw River Rear Range Light",
+    "wikipedia": "en:Saginaw River Rear Range Light",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 45.8105246,
+    "longitude": -84.4210271,
+    "name": "Bois Blanc Island Lighthouse",
+    "website": "https://www.lighthousefriends.com/light.asp?ID=718",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 45.2102865,
+    "longitude": -85.5501397,
+    "name": "Grand Traverse Lighthouse",
+    "historic": "yes",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 45.3379225,
+    "longitude": -83.4905855,
+    "name": "Presque Isle Rear Range Lighthouse",
+    "address_state": "MI",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 45.3420456,
+    "longitude": -83.4782304,
+    "name": "Old Presque Isle Light",
+    "wikipedia": "en:Old Presque Isle Light",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 44.0228565,
+    "longitude": -82.793181,
+    "name": "Pointe aux Barques Lighthouse",
+    "protection_title": "Lighthouse County Park",
+    "website": "https://pointeauxbarqueslighthouse.org/",
+    "heritage_website": "https://www.nps.gov/subjects/nationalregister/index.htm",
+    "historic": "maritime",
+    "wikipedia": "en:Pointe aux Barques Light",
+    "building": "yes",
+    "start_date": "1857",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 46.7711567,
+    "longitude": -84.9575654,
+    "name": "Whitefish Point Lighthouse",
+    "protection_title": "Great Lakes Shipwreck Historical Society",
+    "website": "https://www.lighthousefriends.com/light.asp?ID=567",
+    "heritage_website": "https://www.nps.gov/subjects/nationalregister/index.htm",
+    "historic": "maritime",
+    "wikipedia": "en:Whitefish Point Light",
+    "building": "yes",
+    "start_date": "1861",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 47.8664303,
+    "longitude": -89.3148443,
+    "name": "Rock of Ages Lighthouse",
+    "protection_title": "Isle Royale National Park",
+    "website": "https://www.nps.gov/articles/000/rock-of-ages-lighthouse.htm",
+    "heritage_website": "https://www.nps.gov/subjects/nationalregister/index.htm",
+    "operator": "U.S. Coast Guard",
+    "historic": "heritage",
+    "wikipedia": "en:Rock of Ages Light",
+    "building": "yes",
+    "start_date": "1910",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 47.9478594,
+    "longitude": -88.7613001,
+    "name": "Isle Royale Light",
+    "alt_name": "Menagerie Island Lighthouse",
+    "protection_title": "Isle Royale National Park",
+    "website": "https://www.nps.gov/articles/000/isle-royale-lighthouse.htm",
+    "heritage_website": "https://www.nps.gov/subjects/nationalregister/index.htm",
+    "operator": "U.S. Coast Guard",
+    "historic": "heritage",
+    "wikipedia": "en:Isle Royale Light",
+    "building": "lighthouse",
+    "start_date": "1875",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 46.8733684,
+    "longitude": -89.3259198,
+    "name": "Ontonagon Lighthouse",
+    "protection_title": "Ontonagon County Historical Society",
+    "website": "https://www.lighthousefriends.com/light.asp?ID=219",
+    "heritage_website": "https://www.nps.gov/subjects/nationalregister/index.htm",
+    "historic": "lighthouse",
+    "wikipedia": "en:Ontonagon Light",
+    "building": "yes",
+    "start_date": "1884",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 45.0210343,
+    "longitude": -85.9571306,
+    "name": "North Manitou Shoal Light Station",
+    "protection_title": "U.S. Coast Guard",
+    "heritage_website": "https://www.nps.gov/subjects/nationalregister/index.htm",
+    "historic": "maritime",
+    "wikipedia": "en:North Manitou Shoal Light Station",
+    "building": "yes",
+    "start_date": "1934",
+    "description": "Rising from the center of the station building is a square, three-story tower. The tower's first two stories are 13 feet square, while the third story is 12.5 feet square.",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 42.401386,
+    "longitude": -86.2879211,
+    "name": "South Haven South Pierhead Light",
+    "operator": "U.S. Coast Guard",
+    "wikipedia": "en:South Haven Light",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 42.1161476,
+    "longitude": -86.4934843,
+    "name": "St. Joseph North Pier Lighthouse",
+    "heritage_website": "https://www.nps.gov/subjects/nationalregister/index.htm",
+    "operator": "U.S. Coast Guard",
+    "historic": "lighthouse",
+    "building": "yes",
+    "start_date": "1907",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 42.1163669,
+    "longitude": -86.4945427,
+    "name": "North Pierhead Light",
+    "protection_title": "U.S. Coast Guard",
+    "heritage_website": "https://www.nps.gov/subjects/nationalregister/index.htm",
+    "operator": "U.S. Coast Guard",
+    "historic": "lighthouse",
+    "building": "yes",
+    "start_date": "1906",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 44.6308789,
+    "longitude": -86.252201,
+    "name": "Frankfort North Breakwater Light",
+    "protection_title": "U.S. Coast Guard",
+    "heritage_website": "https://www.nps.gov/subjects/nationalregister/index.htm",
+    "operator": "U.S. Coast Guard",
+    "historic": "lighthouse",
+    "wikipedia": "en:Frankfort Light",
+    "building": "yes",
+    "start_date": "1912",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 45.320267,
+    "longitude": -85.2649061,
+    "name": "Charlevoix South Pier Light",
+    "protection_title": "U.S. Coast Guard",
+    "heritage_website": "https://www.nps.gov/subjects/nationalregister/index.htm",
+    "operator": "U.S. Coast Guard",
+    "historic": "lighthouse",
+    "wikipedia": "en:Charlevoix South Pier Light Station",
+    "building": "yes",
+    "start_date": "1948",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 47.4676161,
+    "longitude": -87.866846,
+    "name": "Copper Harbor Rear Range Lights",
+    "website": "https://www.lighthousefriends.com/light.asp?ID=225",
+    "operator": "Michigan Historical Museum System",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 47.3740165,
+    "longitude": -87.9669186,
+    "name": "Bete Grise (Mendota) Lighthouse",
+    "website": "https://www.lighthousefriends.com/light.asp?ID=227",
+    "wikipedia": "en:Mendota (Bete Grise) Light",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 44.2537303,
+    "longitude": -83.4494952,
+    "name": "Tawas Point Lighthouse",
+    "website": "https://www.michigan.gov/mhc/museums/tawas",
+    "operator": "DNR",
+    "building": "lighthouse",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 45.6473639,
+    "longitude": -84.4728868,
+    "name": "Cheboygan River Front Range Light",
+    "address_city": "Cheboygan",
+    "address_zipcode": "49721",
+    "address_state": "MI",
+    "address_number": "606",
+    "address_street": "Water Street",
+    "email": "info@gllka.org",
+    "phone": "+1-231-436-5580",
+    "website": "https://www.gllka.org/cheboygan-river-front-range-light",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 45.9448711,
+    "longitude": -86.2475531,
+    "name": "Manistique East Breakwater Lighthouse",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 46.7529461,
+    "longitude": -85.2574208,
+    "name": "Crisp Point Lighthouse",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 43.8457196,
+    "longitude": -82.6313489,
+    "name": "Harbor Beach Light",
+    "protection_title": "Add Ownership",
+    "heritage_website": "https://www.nps.gov/subjects/nationalregister/index.htm",
+    "operator": "City of Harbor Beach",
+    "historic": "maritime",
+    "wikipedia": "en:Harbor Beach Light",
+    "building": "yes",
+    "start_date": "1885",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 47.4171281,
+    "longitude": -87.6639032,
+    "name": "Gull Rock Lighthouse",
+    "building": "yes",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 44.0820701,
+    "longitude": -82.9824256,
+    "name": "Port Austin Reef Light",
+    "protection_title": "Port Austin Reef Lighthouse Association",
+    "website": "https://www.portaustinreeflight.org/",
+    "heritage_website": "https://www.nps.gov/subjects/nationalregister/index.htm",
+    "operator": "U.S. Coast Guard",
+    "historic": "lighthouse",
+    "building": "yes",
+    "start_date": "1899",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 46.5741545,
+    "longitude": -87.3745581,
+    "name": "Breakwater Light",
+    "protection_title": "U.S. Coast Guard",
+    "website": "https://www.lighthousefriends.com/light.asp?ID=573",
+    "heritage_website": "https://www.nps.gov/subjects/nationalregister/index.htm",
+    "operator": "U.S. Coast Guard",
+    "historic": "lighthouse",
+    "building": "yes",
+    "start_date": "1941",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 46.9688535,
+    "longitude": -88.4311196,
+    "name": "Keweenaw Lower Entrance Light",
+    "protection_title": "U.S. Coast Guard",
+    "heritage_website": "https://www.nps.gov/subjects/nationalregister/index.htm",
+    "operator": "U.S. Coast Guard",
+    "historic": "lighthouse",
+    "building": "yes",
+    "start_date": "1920",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 45.0972812,
+    "longitude": -87.5860502,
+    "name": "Menominee North Pier Lighthouse",
+    "alt_name": "Menominee Pierhead Lighthouse",
+    "protection_title": "U.S. Coast Guard",
+    "heritage_website": "https://www.nps.gov/subjects/nationalregister/index.htm",
+    "operator": "U.S. Coast Guard",
+    "historic": "lighthouse",
+    "wikipedia": "en:Menominee Pier Light",
+    "building": "yes",
+    "start_date": "1877",
+    "uniqueType": "lighthouse"
+  },
+  {
+    "latitude": 43.9536416,
+    "longitude": -86.4694924,
+    "name": "North Breakwater Light",
+    "alt_name": "Ludington Light",
+    "protection_title": "U.S. Coast Guard",
+    "heritage_website": "https://www.nps.gov/subjects/nationalregister/index.htm",
+    "operator": "U.S. Coast Guard",
+    "historic": "lighthouse",
+    "wikipedia": "en:Ludington Light",
+    "building": "yes",
+    "start_date": "1924",
+    "uniqueType": "lighthouse"
+  }
+]
