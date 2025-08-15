@@ -9,6 +9,31 @@ export function middleware(request: NextRequest) {
     });
   }
 
+  // Allow data files and static assets to pass through
+  if (
+    request.nextUrl.pathname.startsWith("/data/") ||
+    request.nextUrl.pathname.startsWith("/api") ||
+    request.nextUrl.pathname.startsWith("/_next") ||
+    request.nextUrl.pathname.startsWith("/static") ||
+    request.nextUrl.pathname.startsWith("/images") ||
+    request.nextUrl.pathname.startsWith("/icons") ||
+    request.nextUrl.pathname.startsWith("/lighthouse") ||
+    request.nextUrl.pathname.endsWith(".json") ||
+    request.nextUrl.pathname.endsWith(".js") ||
+    request.nextUrl.pathname.endsWith(".css") ||
+    request.nextUrl.pathname.endsWith(".png") ||
+    request.nextUrl.pathname.endsWith(".jpg") ||
+    request.nextUrl.pathname.endsWith(".jpeg") ||
+    request.nextUrl.pathname.endsWith(".gif") ||
+    request.nextUrl.pathname.endsWith(".svg") ||
+    request.nextUrl.pathname.endsWith(".webp") ||
+    request.nextUrl.pathname.endsWith(".ico") ||
+    request.nextUrl.pathname.endsWith(".txt") ||
+    request.nextUrl.pathname.endsWith(".xml")
+  ) {
+    return NextResponse.next();
+  }
+
   // Handle other non-existent routes
   if (
     !request.nextUrl.pathname.startsWith("/api") &&

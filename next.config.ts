@@ -129,6 +129,19 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      {
+        source: "/data/(.*)",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=3600",
+          },
+          {
+            key: "Content-Type",
+            value: "application/json",
+          },
+        ],
+      },
       // Add specific headers for 404 pages
       {
         source: "/404",
@@ -153,7 +166,7 @@ const nextConfig: NextConfig = {
   env: {
     NEXT_PUBLIC_API_URL: "https://api.example.com",
   },
-  trailingSlash: true,
+  // trailingSlash: true, // Temporarily disabled to fix static file serving
 };
 
 export default nextConfig;
