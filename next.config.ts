@@ -129,6 +129,24 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      // Add specific headers for 404 pages
+      {
+        source: "/404",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "no-cache, no-store, must-revalidate",
+          },
+          {
+            key: "Pragma",
+            value: "no-cache",
+          },
+          {
+            key: "Expires",
+            value: "0",
+          },
+        ],
+      },
     ];
   },
 
