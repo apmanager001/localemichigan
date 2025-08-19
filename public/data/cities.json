@@ -2145,7 +2145,7 @@
     "lon": -86.1090828,
     "lat": 42.7876022,
     "start_date": null,
-    "website": null,
+    "website": "https://www.cityofholland.com/",
     "sister_cities": [
       "Querétaro City, Mexico",
       "Hikone, Japan"
@@ -2155,17 +2155,17 @@
       "49423",
       "49424"
     ],
-    "county": "Missaukee",
-    "Population2020": "221",
-    "Population2010": "248",
-    "Population2000": "223",
+    "county": ["Allegan", "Ottawa"],
+    "Population2020": "34,378",
+    "Population2010": null,
+    "Population2000": null,
     "landAreaSqMi": "35.62",
-    "density": "7.0/sq mi (2.7/km2)",
-    "wikiUrl": "https://en.wikipedia.org/wiki/Holland_Township,_Missaukee_County,_Michigan",
-    "facebook": null,
-    "youtube": null,
+    "density": "2,070.74/sq mi (799.52/km2)",
+    "wikiUrl": "https://en.wikipedia.org/wiki/Holland,_Michigan",
+    "facebook": "https://www.facebook.com/hollandmichigan?ref=search&sid=1832479745.3335492534..1",
+    "youtube": "https://www.youtube.com/user/CityofHolland",
     "instagram": null,
-    "x": null
+    "x": "https://x.com/CityofHolland"
   },
   {
     "name": "Grand Rapids",
