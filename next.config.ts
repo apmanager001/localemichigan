@@ -49,6 +49,222 @@ const nextConfig: NextConfig = {
         hostname: "michiganchronicle.com",
         pathname: "/**",
       },
+      // Ticketmaster image domains
+      {
+        protocol: "https",
+        hostname: "s1.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s2.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s3.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s4.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s5.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s6.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s7.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s8.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s9.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s10.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s11.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s12.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s13.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s14.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s15.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s16.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s17.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s18.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s19.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s20.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s21.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s22.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s23.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s24.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s25.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s26.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s27.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s28.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s29.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s30.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s31.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s32.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s33.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s34.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s35.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s36.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s37.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s38.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s39.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s40.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s41.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s42.ticketm.net",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "s43.ticketm.net",
+        pathname: "/**",
+      },
     ],
   },
 

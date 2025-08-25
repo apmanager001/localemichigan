@@ -1,6 +1,7 @@
 import Hero from "./comp/hero";
 import News from "./comp/news";
 import TopCities from "./comp/homepage/topCities";
+import PopularEvents from "./comp/homepage/popularEvents";
 import HomepageMap from "./comp/homepageMap";
 import { Metadata } from "next";
 
@@ -111,6 +112,7 @@ export default function Home() {
       />
       <Hero />
       <TopCities />
+      <PopularEvents />
       {/* <ExploreHero /> */}
       <News />
       <HomepageMap />
