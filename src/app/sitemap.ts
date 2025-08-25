@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const parksPath = path.join(root, "public", "data", "park.json");
   const museumsPath = path.join(root, "public", "data", "museum.json");
   const citiesPath = path.join(root, "public", "data", "cities.json");
+  const golfCoursesPath = path.join(root, "public", "data", "golfCourse.json");
 
   const base = "https://localemichigan.com";
   const now = new Date();
@@ -34,6 +35,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const parks = readJsonArraySafe<ItemWithSlug>(parksPath).slice(0, 5000);
   const museums = readJsonArraySafe<ItemWithSlug>(museumsPath).slice(0, 5000);
   const cities = readJsonArraySafe<ItemWithSlug>(citiesPath).slice(0, 5000);
+  const golfCourses = readJsonArraySafe<ItemWithSlug>(golfCoursesPath).slice(
+    0,
+    5000
+  );
 
   const normalizeSlug = (raw?: string) =>
     (raw || "")
@@ -90,6 +95,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${base}/golf-courses`,
+      lastModified: now,
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    {
       url: `${base}/news`,
       lastModified: now,
       changeFrequency: "daily",
@@ -138,6 +149,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     if (!slug) return;
     urls.push({
       url: urlJoin(base, "museum", slug),
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    });
+  });
+
+  // Golf courses dynamic pages
+  golfCourses.forEach((it) => {
+    const slug = toSlug(it.name, it.slug);
+    if (!slug) return;
+    urls.push({
+      url: urlJoin(base, "golf-courses", slug),
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.6,
