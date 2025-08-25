@@ -40,8 +40,11 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+#scripts
+scripts/
 
 # readme
 SEO_IMPROVEMENTS.md
 PERFORMANCE_OPTIMIZATION.md
 GOOGLE_SEARCH_CONSOLE_FIX.md
+SEO_ACTION_PLAN.md

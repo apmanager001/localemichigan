@@ -10,6 +10,7 @@ import {
   Waves,
   Building2,
   Lightbulb,
+  LandPlot,
 } from "lucide-react";
 
 const Header = () => {
@@ -19,6 +20,7 @@ const Header = () => {
     { name: "Lakes", href: "/lakes", icon: Waves },
     { name: "Parks", href: "/parks", icon: Mountain },
     { name: "Museums", href: "/museum", icon: Building2 },
+    { name: "Golf Courses", href: "/golf-courses", icon: LandPlot },
     { name: "About", href: "/about", icon: Info },
   ];
 

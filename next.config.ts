@@ -167,6 +167,72 @@ const nextConfig: NextConfig = {
     NEXT_PUBLIC_API_URL: "https://api.example.com",
   },
   // trailingSlash: true, // Temporarily disabled to fix static file serving
+
+  // Redirects to prevent duplicate content and handle old URLs
+  async redirects() {
+    return [
+      // Remove trailing slashes to prevent duplicate content
+      {
+        source: "/:path*//",
+        destination: "/:path*",
+        permanent: true,
+      },
+
+      // Redirect www to non-www (if you prefer non-www)
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "www.localemichigan.com",
+          },
+        ],
+        destination: "https://localemichigan.com/:path*",
+        permanent: true,
+      },
+
+      // Redirect old URL patterns to new ones
+      {
+        source: "/city/:slug",
+        destination: "/cities/:slug",
+        permanent: true,
+      },
+      {
+        source: "/lake/:slug",
+        destination: "/lakes/:slug",
+        permanent: true,
+      },
+      {
+        source: "/park/:slug",
+        destination: "/parks/:slug",
+        permanent: true,
+      },
+      {
+        source: "/lighthouse/:slug",
+        destination: "/lighthouses/:slug",
+        permanent: true,
+      },
+
+      // Redirect old API endpoints if they exist
+      {
+        source: "/api/city/:slug",
+        destination: "/api/cities/:slug",
+        permanent: true,
+      },
+
+      // Redirect common misspellings
+      {
+        source: "/lighthouses",
+        destination: "/lighthouses",
+        permanent: false,
+      },
+      {
+        source: "/museums",
+        destination: "/museum",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

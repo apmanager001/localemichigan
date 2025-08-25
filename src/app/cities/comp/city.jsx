@@ -24,6 +24,7 @@ const City = () => {
     lighthouses: [],
     museums: [],
     parks: [],
+    golfCourses: [],
   });
 
   // Memoize the formatted city ID
@@ -122,20 +123,24 @@ const City = () => {
 
     const loadAll = async () => {
       try {
-        const [lakesRes, lightsRes, museumsRes, parksRes] = await Promise.all([
-          fetch("/data/lakes.json")
-            .then((r) => r.json())
-            .catch(() => []),
-          fetch("/data/lighthouse.json")
-            .then((r) => r.json())
-            .catch(() => []),
-          fetch("/data/museum.json")
-            .then((r) => r.json())
-            .catch(() => []),
-          fetch("/data/park.json")
-            .then((r) => r.json())
-            .catch(() => []),
-        ]);
+        const [lakesRes, lightsRes, museumsRes, parksRes, golfRes] =
+          await Promise.all([
+            fetch("/data/lakes.json")
+              .then((r) => r.json())
+              .catch(() => []),
+            fetch("/data/lighthouse.json")
+              .then((r) => r.json())
+              .catch(() => []),
+            fetch("/data/museum.json")
+              .then((r) => r.json())
+              .catch(() => []),
+            fetch("/data/park.json")
+              .then((r) => r.json())
+              .catch(() => []),
+            fetch("/data/golfCourse.json")
+              .then((r) => r.json())
+              .catch(() => []),
+          ]);
 
         // Radius heuristics (km)
         const R_LAKE = 50;
@@ -231,7 +236,31 @@ const City = () => {
           .sort((a, b) => (a.distanceKm ?? 1e9) - (b.distanceKm ?? 1e9))
           .slice(0, 12);
 
-        setNearby({ lakes, lighthouses, museums, parks });
+        // Process golf courses
+        const R_GOLF = 50; // 50km radius for golf courses
+        const golfCourses = (golfRes || [])
+          .filter(
+            (it) =>
+              byCityName(it.nearestCity) ||
+              within(Number(it.latitude), Number(it.longitude), R_GOLF)
+          )
+          .map((it) => ({
+            name: it.name,
+            slug: slugify(it.name, it.slug),
+            distanceKm: within(Number(it.latitude), Number(it.longitude), 10000)
+              ? haversineKm(
+                  cityLat,
+                  cityLon,
+                  Number(it.latitude),
+                  Number(it.longitude)
+                )
+              : null,
+          }))
+          .filter((it) => it.slug && it.slug.length > 0)
+          .sort((a, b) => (a.distanceKm ?? 1e9) - (b.distanceKm ?? 1e9))
+          .slice(0, 12);
+
+        setNearby({ lakes, lighthouses, museums, parks, golfCourses });
       } catch (e) {
         // ignore failures
       }
@@ -410,7 +439,8 @@ const City = () => {
             {nearby.lakes.length ||
             nearby.lighthouses.length ||
             nearby.museums.length ||
-            nearby.parks.length ? (
+            nearby.parks.length ||
+            nearby.golfCourses.length ? (
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
                 <div className="p-6 pb-0">
                   <h3 className="text-xl font-bold text-gray-800 mb-6">
@@ -504,6 +534,31 @@ const City = () => {
                             <Link
                               href={`/parks/${it.slug}`}
                               className="text-green-700 hover:underline"
+                            >
+                              {it.name}
+                              {typeof it.distanceKm === "number" && (
+                                <span className="text-gray-500 text-sm">
+                                  {" "}
+                                  • {it.distanceKm.toFixed(1)} km
+                                </span>
+                              )}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                  {nearby.golfCourses.length > 0 && (
+                    <div>
+                      <h4 className="text-lg font-semibold text-emerald-700 mb-3">
+                        Golf Courses
+                      </h4>
+                      <ul className="space-y-2">
+                        {nearby.golfCourses.slice(0, 6).map((it) => (
+                          <li key={`golf-${it.slug}`}>
+                            <Link
+                              href={`/golf-courses/${it.slug}`}
+                              className="text-emerald-700 hover:underline"
                             >
                               {it.name}
                               {typeof it.distanceKm === "number" && (

@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     siteName: "Locale Michigan",
     title: "Locale Michigan - Discover Michigan Cities, Parks, Lakes & More",
     description:
-      "Explore Michigan's vibrant cities, stunning lighthouses, serene parks, fascinating museums, and breathtaking lakes. Your comprehensive guide to the Great Lakes State.",
+      "Explore Michigan's vibrant cities, stunning lighthouses, serene parks, fascinating museums, amazing golf courses, and breathtaking lakes. Your comprehensive guide to the Great Lakes State.",
     images: [
       {
         url: "/logo.png",
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     creator: "@localemichigan",
     title: "Locale Michigan - Discover Michigan Cities, Parks, Lakes & More",
     description:
-      "Explore Michigan's vibrant cities, stunning lighthouses, serene parks, fascinating museums, and breathtaking lakes.",
+      "Explore Michigan's vibrant cities, stunning lighthouses, serene parks, fascinating museums, amazing golf courses, and breathtaking lakes.",
     images: ["/logo.png"],
   },
   robots: {
@@ -98,6 +98,12 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://localemichigan.com",
+    languages: {
+      "en-US": "https://localemichigan.com",
+    },
+  },
+  other: {
+    "google-site-verification": "your-google-verification-code",
   },
 };
 
@@ -109,10 +115,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth w-full">
       <head>
-         {/* <!-- Google tag (gtag.js) --> */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-1KBLY2J0H4"></Script>
+        {/* <!-- Google tag (gtag.js) --> */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-1KBLY2J0H4"
+        ></Script>
         <Script id="google-analytics">
-         {`window.dataLayer = window.dataLayer || [];
+          {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
@@ -180,5 +189,5 @@ export default function RootLayout({
         </PostHogProvider>
       </body>
     </html>
-  ); 
+  );
 }
