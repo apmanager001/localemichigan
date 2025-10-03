@@ -14,7 +14,6 @@ const LighthousePage = () => {
   const params = useParams();
   const [lighthouseData, setLighthouseData] = useState(null);
   const [loading, setLoading] = useState(true);
-
   useEffect(() => {
     if (params.id) {
       fetch("/data/lighthouse.json")
@@ -120,7 +119,7 @@ const LighthousePage = () => {
         {lighthouseData.heroImage && (
           <img
             src={lighthouseData.heroImage}
-            alt={`${lighthouseData.name}`}
+            alt={`Hero image of${lighthouseData.name}`}
             className="absolute inset-0 w-full h-full object-cover"
             loading="eager"
           />

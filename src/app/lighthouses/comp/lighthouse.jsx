@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import lighthouseImage from "../images/lighthouse.webp";
@@ -9,7 +9,7 @@ import LighthouseMap from "./lighthouseMap";
 
 const LighthousePage = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [featured, setFeatured] = useState([]);
+  // const [featured, setFeatured] = useState([]);
   const [lighthouseData, setLighthouseData] = useState([]);
 
   useEffect(() => {
@@ -25,9 +25,13 @@ const LighthousePage = () => {
       .catch((err) => console.error("Failed to load lighthouse data:", err));
   }, []);
 
-  useEffect(() => {
-    const shuffled = [...lighthouseData].sort(() => 0.5 - Math.random());
-    setFeatured(shuffled.slice(0, 3));
+  // useEffect(() => {
+  //   const shuffled = [...lighthouseData].sort(() => 0.5 - Math.random());
+  //   setFeatured(shuffled.slice(0, 3));
+  // }, [lighthouseData]);
+
+  const featured = useMemo(() => {
+    return [...lighthouseData].sort(() => 0.5 - Math.random()).slice(0, 3);
   }, [lighthouseData]);
 
   const filteredNames = lighthouseData.filter((entry) =>
@@ -142,6 +146,7 @@ const LighthousePage = () => {
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                     className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent text-lg shadow-sm transition-all duration-200"
+                    autoComplete="off"
                   />
                 </div>
                 {searchTerm && (

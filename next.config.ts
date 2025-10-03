@@ -437,11 +437,11 @@ const nextConfig: NextConfig = {
       },
 
       // Redirect common misspellings
-      {
-        source: "/lighthouses",
-        destination: "/lighthouses",
-        permanent: false,
-      },
+      // {
+      //   source: "/lighthouses",
+      //   destination: "/lighthouses",
+      //   permanent: false,
+      // },
       {
         source: "/museums",
         destination: "/museum",

@@ -149,6 +149,7 @@ const MuseumsPage = () => {
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                     className="w-full pl-12 pr-4 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent text-lg shadow-sm transition-all duration-200"
+                    autoComplete="off"
                   />
                 </div>
                 {searchTerm && (

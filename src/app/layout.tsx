@@ -4,7 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import Header from "./comp/header";
 import Footer from "./comp/footer";
-import { PostHogProvider } from "./provider";
+// import { PostHogProvider } from "./provider";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -159,7 +159,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen w-full`}
       >
-        <PostHogProvider>
+        {/* <PostHogProvider> */}
           <Toaster
             position={"top-left"}
             toastOptions={{
@@ -186,7 +186,7 @@ export default function RootLayout({
           <Header />
           <main className="flex-grow pt-16 relative">{children}</main>
           <Footer />
-        </PostHogProvider>
+        {/* </PostHogProvider> */}
       </body>
     </html>
   );
