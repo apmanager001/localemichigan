@@ -128,6 +128,7 @@ export default function RootLayout({
           gtag('config', 'G-1KBLY2J0H4');`}
         </Script>
         {/* Google AdSense */}
+        <meta name="google-adsense-account" content="ca-pub-9248356523220808"></meta>
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9248356523220808"
