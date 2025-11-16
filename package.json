@@ -13,6 +13,7 @@
     "generate:sitemap": "node src/function/sitemap.js",
     "lighthouse": "lighthouse http://localhost:3000 --output=json --output-path=./lighthouse-report.json",
     "bundle-analyzer": "npx @next/bundle-analyzer",
+    "check:ads": "node src/function/validate-ads.js",
     "enrich:lakes": "node scripts/enrich-lakes.mjs --limit=200"
   },
   "dependencies": {

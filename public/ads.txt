@@ -1,0 +1,16 @@
+# ads.txt for Locale Michigan
+# Created: 2025-11-16
+# Authorizes the following digital sellers to sell ads for https://localemichigan.com
+
+# Google AdSense (publisher ID you provided) — listed as RESELLER per request
+google.com, pub-9248356523220808, RESELLER, f08c47fec0942fa0
+
+# Add other networks or reseller lines below in the same format:
+# <domain>, <publisher-id>, <DIRECT|RESELLER>, <certification-authority-id (optional)>
+# Examples (commented):
+# openx.com, 123456, RESELLER, abcdef1234567890
+# indexexchange.com, 987654, RESELLER, 0123456789abcdef
+
+# Notes:
+# - Place this file at the site root (done via public/ads.txt so it will be served at /ads.txt).
+# - Keep entries up-to-date whenever you add partners or enable resellers.

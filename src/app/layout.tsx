@@ -129,11 +129,6 @@ export default function RootLayout({
         </Script>
         {/* Google AdSense */}
         <meta name="google-adsense-account" content="ca-pub-9248356523220808"></meta>
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9248356523220808"
-          crossOrigin="anonymous"
-        ></Script>
         {/* DNS prefetch for external resources */}
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
