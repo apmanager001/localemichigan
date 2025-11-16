@@ -127,6 +127,12 @@ export default function RootLayout({
 
           gtag('config', 'G-1KBLY2J0H4');`}
         </Script>
+        {/* Google AdSense */}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9248356523220808"
+          crossOrigin="anonymous"
+        ></Script>
         {/* DNS prefetch for external resources */}
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
@@ -160,32 +166,32 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen w-full`}
       >
         {/* <PostHogProvider> */}
-          <Toaster
-            position={"top-left"}
-            toastOptions={{
-              duration: 5000,
+        <Toaster
+          position={"top-left"}
+          toastOptions={{
+            duration: 5000,
+            style: {
+              border: "2px solid #000",
+              padding: "22px",
+              color: "#713200",
+              fontSize: "16px",
+              fontWeight: "700",
+            },
+            success: {
               style: {
-                border: "2px solid #000",
-                padding: "22px",
-                color: "#713200",
-                fontSize: "16px",
-                fontWeight: "700",
+                background: "#CFFDBC",
               },
-              success: {
-                style: {
-                  background: "#CFFDBC",
-                },
+            },
+            error: {
+              style: {
+                background: "#ff9494",
               },
-              error: {
-                style: {
-                  background: "#ff9494",
-                },
-              },
-            }}
-          />
-          <Header />
-          <main className="flex-grow pt-16 relative">{children}</main>
-          <Footer />
+            },
+          }}
+        />
+        <Header />
+        <main className="flex-grow pt-16 relative">{children}</main>
+        <Footer />
         {/* </PostHogProvider> */}
       </body>
     </html>

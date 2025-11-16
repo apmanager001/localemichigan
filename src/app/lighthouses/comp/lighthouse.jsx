@@ -4,7 +4,7 @@ import { useEffect, useState, useMemo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import lighthouseImage from "../images/lighthouse.webp";
-import { Search, Lightbulb, MapPin, Anchor } from "lucide-react";
+import { Search, Lightbulb, MapPin, Anchor, TowerControl } from "lucide-react";
 import LighthouseMap from "./lighthouseMap";
 
 const LighthousePage = () => {
@@ -58,7 +58,7 @@ const LighthousePage = () => {
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-center text-white px-6 max-w-4xl">
             <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 backdrop-blur-sm rounded-full mb-6 border border-white/30">
-              <Lightbulb className="w-8 h-8 text-white" />
+              <TowerControl className="w-8 h-8 text-white" />
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-4">
               Michigan Lighthouses
@@ -96,7 +96,7 @@ const LighthousePage = () => {
               >
                 <div className="flex flex-col items-center text-center">
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center mb-4">
-                    <Lightbulb className="w-6 h-6 text-white" />
+                    <TowerControl className="w-6 h-6 text-white" />
                   </div>
                   <h2 className="text-xl font-semibold text-gray-800 mb-2">
                     {light.name}
