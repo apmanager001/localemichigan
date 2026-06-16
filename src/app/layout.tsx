@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "react-hot-toast";
 import Header from "./comp/header";
 import Footer from "./comp/footer";
+import TurnstileGateWrapper from "./TurnstileGateWrapper";
 // import { PostHogProvider } from "./provider";
 import "./globals.css";
 
@@ -128,7 +129,10 @@ export default function RootLayout({
           gtag('config', 'G-1KBLY2J0H4');`}
         </Script>
         {/* Google AdSense */}
-        <meta name="google-adsense-account" content="ca-pub-9248356523220808"></meta>
+        <meta
+          name="google-adsense-account"
+          content="ca-pub-9248356523220808"
+        ></meta>
         {/* DNS prefetch for external resources */}
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />
@@ -185,9 +189,9 @@ export default function RootLayout({
             },
           }}
         />
-        <Header />
-        <main className="flex-grow pt-16 relative">{children}</main>
-        <Footer />
+        <TurnstileGateWrapper header={<Header />} footer={<Footer />}>
+          <main className="flex-grow pt-16 relative">{children}</main>
+        </TurnstileGateWrapper>
         {/* </PostHogProvider> */}
       </body>
     </html>

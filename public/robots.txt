@@ -24,3 +24,5 @@ Allow: /lighthouses/
 Allow: /museum/
 Allow: /news/
 Allow: /about/ 
+Allow: /golf-courses/
+Allow: /events/

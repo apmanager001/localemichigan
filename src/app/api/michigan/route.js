@@ -19,7 +19,7 @@ export async function GET() {
   try {
     const urls = [
       "https://www.michigandaily.com/feed/",
-      "https://michiganchronicle.com/feed/",
+      // "https://michiganchronicle.com/feed/",
       "https://www.mlive.com/arc/outboundfeeds/rss/?outputType=xml",
       "https://www.wlns.com/news/michigan/feed/",
     ];
@@ -43,7 +43,7 @@ export async function GET() {
           author: item.creator || item.author,
           categories: item.categories || [],
         }))
-      )
+      ) 
       .sort(
         (a, b) => new Date(b.pubDate).getTime() - new Date(a.pubDate).getTime()
       );
