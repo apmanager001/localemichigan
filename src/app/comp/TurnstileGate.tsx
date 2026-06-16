@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 declare global {
   interface Window {
     turnstile?: {
-      render: (element: HTMLDivElement, options: Record<string, any>) => number;
+      render: (element: HTMLDivElement, options: Record<string, unknown>) => number;
       execute?: (widgetId: number) => void;
       remove: (widgetId: number) => void;
     };
